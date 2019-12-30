@@ -1,0 +1,52 @@
+// 份数
+$copies : 20;
+
+//一份所占的像素
+$piece :  20;
+
+
+@media screen and (width: 320px){
+    html{
+        font-size: (320px / $copies);
+    }
+}
+
+@media screen and (width: 375px){
+    html{
+        font-size: (375px / $copies);
+    }
+}
+
+
+header{
+    height: (45rem / $piece);
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-left{
+    float: left;
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #eeeeee;
+
+    i{
+        float: right;
+        line-height: (50rem / $piece);
+        color: #666666;
+        margin-right: (15rem  / $piece);
+    }
+}
+
+.header-center{
+    float: left;
+    width: 27%;
+    height: 100%;
+    border-right: 1px solid #eeeeee;
+}
+
+.header-right{
+    float: left;
+}
+
+
+

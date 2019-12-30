@@ -1,0 +1,577 @@
+
+
+
+
+
+/* 字体图标 */
+@font-face {
+    font-family: 'indienova-store-icon';
+    src: url('../fonts/indienova-store-icon.eot?indienova8');
+    src: url('../fonts/indienova-store-icon.eot?indienova8#iefix') format('embedded-opentype'),url('../fonts/indienova-store-icon.ttf?indienova8') format('truetype'),url('../fonts/indienova-store-icon.woff?indienova8') format('woff'),url('../fonts/indienova-store-icon.svg?indienova8#indienova-store-icon') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'indiesocial';
+    src: url('../fonts/indiesocial.eot?indienova9');
+    src: url('../fonts/indiesocial.eot?#iefixindienova9') format('embedded-opentype'),url('../fonts/indiesocial.ttf?indienova9') format('truetype'),url('../fonts/indiesocial.woff?indienova9') format('woff'),url('../fonts/indiesocial.svg?indienova9#indiesocial') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="icon-cn-"],[class*=" icon-cn-"],[class^="icon-console-"],[class*=" icon-console-"],[class^="icon-platform-"],[class*=" icon-platform-"],[class^="icon-engine-"],[class*=" icon-engine-"],.side-header #primary-menu ul>li.sub-menu>a:after {
+    display: inline-block;
+    font-family: 'font-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+[class^="icon-cn-"],[class*=" icon-cn-"] {
+    font-family: 'indiesocial'
+}
+
+[class^="icon-console-"],[class*=" icon-console-"] {
+    font-family: 'indiesocial'
+}
+
+[class^="icon-platform-"],[class*=" icon-platform-"] {
+    font-family: 'indiesocial'
+}
+
+[class^="icon-engine-"],[class*=" icon-engine-"] {
+    font-family: 'indiesocial'
+}
+
+ul.docs-icons li span {
+    font-family: "Courier","Courier New",monospace;
+    font-size: 14px;
+    display: block;
+    color: #AAA
+}
+
+.icon-cn-epicgames:before {
+    content: "\e900"
+}
+
+.icon-cn-artstation:before {
+    content: "\e901"
+}
+
+.icon-cn-be:before {
+    content: "\e902"
+}
+
+.icon-cn-buy-me-a-coffee:before {
+    content: "\e903"
+}
+
+.icon-cn-discord-o:before {
+    content: "\e904"
+}
+
+.icon-cn-discord:before {
+    content: "\e905"
+}
+
+.icon-cn-ko-fi:before {
+    content: "\e906"
+}
+
+.icon-cn-patreon-a:before {
+    content: "\e907"
+}
+
+.icon-cn-patreon:before {
+    content: "\e908"
+}
+
+.icon-cn-reddit-o:before {
+    content: "\e909"
+}
+
+.icon-cn-reddit:before {
+    content: "\e90a"
+}
+
+.icon-cn-telegram-o:before {
+    content: "\e90b"
+}
+
+.icon-cn-telegram:before {
+    content: "\e90c"
+}
+
+.icon-cn-blockchain:before {
+    content: "\e90d"
+}
+
+.icon-cn-gaia:before {
+    content: "\e90e"
+}
+
+.icon-cn-gamedb:before {
+    content: "\e90f"
+}
+
+.icon-cn-gamemory:before {
+    content: "\e910"
+}
+
+.icon-engine-gm:before {
+    content: "\e911"
+}
+
+.icon-engine-unity:before {
+    content: "\e912"
+}
+
+.icon-engine-unreal:before {
+    content: "\e913"
+}
+
+.icon-platform-origin:before {
+    content: "\e914"
+}
+
+.icon-platform-uplay:before {
+    content: "\e915"
+}
+
+.icon-cn-humblestore:before {
+    content: "\e916"
+}
+
+.icon-platform-sonkwo2:before {
+    content: "\e917"
+}
+
+.icon-platform-wegame:before {
+    content: "\e918"
+}
+
+.icon-platform-xboxstore:before {
+    content: "\e919"
+}
+
+.icon-platform-gog2:before {
+    content: "\e91a"
+}
+
+.icon-cn-wikia:before {
+    content: "\e91b"
+}
+
+.icon-platform-steam3:before {
+    content: "\e91c"
+}
+
+.icon-cn-google:before {
+    content: "\e91d"
+}
+
+.icon-cn-instagram:before {
+    content: "\e91e"
+}
+
+.icon-cn-twitch:before {
+    content: "\e91f"
+}
+
+.icon-cn-tablet:before {
+    content: "\e920"
+}
+
+.icon-cn-crown:before {
+    content: "\e929"
+}
+
+.icon-cn-direction:before {
+    content: "\e92a"
+}
+
+.icon-cn-joy1:before {
+    content: "\e92b"
+}
+
+.icon-cn-joy2:before {
+    content: "\e92c"
+}
+
+.icon-cn-joy3:before {
+    content: "\e92d"
+}
+
+.icon-cn-joy4:before {
+    content: "\e92e"
+}
+
+.icon-cn-joy5:before {
+    content: "\e938"
+}
+
+.icon-cn-joy6:before {
+    content: "\e939"
+}
+
+.icon-cn-joy7:before {
+    content: "\e93a"
+}
+
+.icon-cn-joy8:before {
+    content: "\e93b"
+}
+
+.icon-cn-novapress:before {
+    content: "\e93c"
+}
+
+.icon-cn-pac1:before {
+    content: "\e93d"
+}
+
+.icon-cn-pac2:before {
+    content: "\e93e"
+}
+
+.icon-cn-pac3:before {
+    content: "\e93f"
+}
+
+.icon-cn-pac4:before {
+    content: "\e940"
+}
+
+.icon-cn-pacman:before {
+    content: "\e941"
+}
+
+.icon-cn-gutenberg:before {
+    content: "\e0aa"
+}
+
+.icon-cn-indienova-o:before {
+    content: "\e0ab"
+}
+
+.icon-cn-indienova:before {
+    content: "\e0ac"
+}
+
+.icon-cn-kickstarter:before {
+    content: "\e0ad"
+}
+
+.icon-cn-renren:before {
+    content: "\e0a2"
+}
+
+.icon-cn-qq:before {
+    content: "\e0a3"
+}
+
+.icon-cn-tencent-weibo:before {
+    content: "\e0a4"
+}
+
+.icon-cn-weibo:before {
+    content: "\e0a5"
+}
+
+.icon-cn-wechat:before {
+    content: "\e0a6"
+}
+
+.icon-console-ps:before {
+    content: "\e0a7"
+}
+
+.icon-console-xbox:before {
+    content: "\e0a8"
+}
+
+.icon-console-wii:before {
+    content: "\e0a9"
+}
+
+.icon-cn-zhihu:before {
+    content: "\e931"
+}
+
+.icon-console-switch:before {
+    content: "\e932"
+}
+
+.icon-platform-testflight:before {
+    content: "\e933"
+}
+
+.icon-platform-win2:before {
+    content: "\e934"
+}
+
+.icon-platform-mac2:before {
+    content: "\e935"
+}
+
+.icon-platform-linux2:before {
+    content: "\e936"
+}
+
+.icon-platform-android2:before {
+    content: "\e937"
+}
+
+.icon-console-xbox2:before {
+    content: "\e921"
+}
+
+.icon-console-nintendo:before {
+    content: "\e923"
+}
+
+.icon-platform-play:before {
+    content: "\e924"
+}
+
+.icon-platform-itch:before {
+    content: "\e925"
+}
+
+.icon-platform-cube:before {
+    content: "\e926"
+}
+
+.icon-platform-steam2:before {
+    content: "\e927"
+}
+
+.icon-platform-winstore:before {
+    content: "\e928"
+}
+
+.in-icon {
+    font-family: 'indienova-store-icon' !important
+}
+
+.icon-store {
+    padding: 2px 6px;
+    margin: 4px;
+    line-height: 1;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: 'indienova-store-icon' !important;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in
+}
+
+.icon-blog-1:before {
+    content: "\e906"
+}
+
+.icon-blog-2:before {
+    content: "\e907"
+}
+
+.icon-game-1:before {
+    content: "\e908"
+}
+
+.icon-game-2:before {
+    content: "\e909"
+}
+
+.icon-game-3:before {
+    content: "\e90a"
+}
+
+.icon-game-layout-1:before {
+    content: "\e90b"
+}
+
+.icon-game-layout-2:before {
+    content: "\e90e"
+}
+
+.icon-layout-1:before {
+    content: "\e90f"
+}
+
+.icon-layout-2:before {
+    content: "\e910"
+}
+
+.icon-layout-3:before {
+    content: "\e911"
+}
+
+.icon-novapress-logo:before {
+    content: "\e900"
+}
+
+.icon-indienova-logo:before {
+    content: "\e901"
+}
+
+.icon-store-1:before {
+    content: "\e902"
+}
+
+.icon-store-10:before {
+    content: "\e905"
+}
+
+.icon-store-11:before {
+    content: "\e921"
+}
+
+.icon-store-12:before {
+    content: "\e922"
+}
+
+.icon-store-2:before {
+    content: "\e903"
+}
+
+.icon-store-3:before {
+    content: "\e90c"
+}
+
+.icon-store-4:before {
+    content: "\e90d"
+}
+
+.icon-store-5:before {
+    content: "\e904"
+}
+
+.icon-store-6:before {
+    content: "\e912"
+}
+
+.icon-store-7:before {
+    content: "\e913"
+}
+
+.icon-store-8:before {
+    content: "\e918"
+}
+
+.icon-store-9:before {
+    content: "\e919"
+}
+
+.icon-store-13:before {
+    content: "\e914"
+}
+
+.icon-store-14:before {
+    content: "\e915"
+}
+
+.icon-nintendo:before {
+    content: "\e916"
+}
+
+.icon-platform-win:before {
+    content: "\e917"
+}
+
+.icon-platform-ios:before {
+    content: "\e91a"
+}
+
+.icon-platform-mac:before {
+    content: "\e91b"
+}
+
+.icon-platform-psv:before {
+    content: "\e91c"
+}
+
+.icon-platform-ps4:before {
+    content: "\e91d"
+}
+
+.icon-platform-3ds:before {
+    content: "\e91e"
+}
+
+.icon-platform-2ds:before {
+    content: "\e91f"
+}
+
+.icon-platform-xbox1:before {
+    content: "\e92f"
+}
+
+.icon-platform-switch:before {
+    content: "\e930"
+}
+
+.icon-platform-wiiu:before {
+    content: "\e920"
+}
+
+.icon-platform-wii:before {
+    content: "\e923"
+}
+
+.icon-platform-psp:before {
+    content: "\e924"
+}
+
+.icon-platform-ps2:before {
+    content: "\e929"
+}
+
+.icon-platform-ps3:before {
+    content: "\e92a"
+}
+
+.icon-platform-minis:before {
+    content: "\e931"
+}
+
+.icon-platform-psone:before {
+    content: "\e932"
+}
+
+.icon-platform-nds:before {
+    content: "\e92b"
+}
+
+.icon-platform-gog:before {
+    content: "\e92c"
+}
+
+.icon-platform-sonkwo:before {
+    content: "\e92d"
+}
+
+.icon-platform-xbox:before {
+    content: "\e928"
+}
+
+.icon-platform-xbox360:before {
+    content: "\e92e"
+}
+
+.icon-indienova-gaia:before {
+    content: "\e925"
+}
+
+.icon-indienova-gamedb:before {
+    content: "\e926"
+}
+
+.icon-indienova-gamemory:before {
+    content: "\e927"
+}
