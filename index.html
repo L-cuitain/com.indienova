@@ -12,10 +12,18 @@
 
     <!-- 引入 清除样式文件 -->
     <link rel="stylesheet" href="./lib/reset/reset.css">
-    
+
     <!-- 引入css样式 -->
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/index.css">
+
+
+    <!-- 引入jquery -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+    <!-- 引入js -->
+    <script type="text/javascript" src="./js/index.js"></script>
 
 </head>
 
@@ -25,6 +33,7 @@
         <div class="header-left">
             <i class="icon-cn-indienova"></i>
         </div>
+
         <div class="header-center">
             <i class="icon-line2-user"></i>
             <a href="#">登录</a>
@@ -33,10 +42,48 @@
         </div>
 
         <div class="header-right">
+            <li class="header-right-content" id="btn_language">
+                <img src="./img/gb.svg" alt="">
+                <span>En</span>
+                <i class="icon-angle-down"></i>
 
+                <ul class="content-language" id="btn_change">
+                    <li class="EN">
+                        <img src="./img/gb.svg" alt="">
+                        <span>English</span>
+                    </li>
+                    <li class="CN">
+                        <img src="./img/cn.svg" alt="">
+                        <span>简体中文</span>
+                    </li>
+                </ul>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-left" id="nav-getlist">
+            <i class="icon-reorder"></i>
         </div>
 
-    </header>
+        <div class="nav-center">
+            <img src="./img/logo/indienova_new.png" alt="">
+        </div>
+
+        <div class="nav-right">
+            <i class="icon-search3"></i>
+        </div>
+
+        <ul class="nav-list" id="nav-showlist">
+            <li><a href="#">文章</a><i>&gt;</i></li>
+            <li><a href="#">专题</a><i>&gt;</i></li>
+            <li><a href="#">开发</a><i>&gt;</i></i></li>
+            <li><a href="#">游戏</a><i>&gt;</i></li>
+        </ul>
+
+    </nav>
+
+
 </body>
 
 </html>
