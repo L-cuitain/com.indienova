@@ -17,17 +17,34 @@ $(function () {
     //创建 下拉列表 点击事件
     $("#nav-getlist").click(function () {
         //判断列表是否隐藏
-
-        if ($("#nav-showlist").css("visibility")=="hidden") {
+        if ($("#nav-showlist").css("display")=="none"){
             //如果隐藏 在点击后这个块 显示列表
-            $("#nav-showlist").css("visibility", "visible");
+            $("#nav-showlist").css("display", "block");
+            $("nav").css("height","13.5rem");
         }else{
             //否则 列表隐藏
-            $("#nav-showlist").css("visibility", "hidden");
+            $("#nav-showlist").css("display", "none");
+            $("nav").css("height","2.75rem");
         }
     })
 
+
+    // 轮播图
+    var mySwiper = new Swiper('.swiper-container',{
+        autoplay: true,//可选选项，自动滑动
+        loop: true, // 循环模式选项
+        direction : 'horizontal',
+        speed:300,
+      autoplay : {
+        delay:3000
+      },
+      grabCursor : true,
+      })
 })
+
+
+
+
 
 
 

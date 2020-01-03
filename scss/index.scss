@@ -2,90 +2,115 @@
 $copies : 20;
 
 //一份所占的像素
-$piece :  20;
+$piece : 20;
 
 
-@media screen and (width: 320px){
-    html{
+@media screen and (width: 320px) {
+    html {
         font-size: (320px / $copies);
     }
 }
 
-@media screen and (width: 375px){
-    html{
-        font-size: (375px / $copies);
+@media screen and (width: 360px) {
+    html {
+        font-size: (360px / $copies);
     }
 }
 
 
-header{
+@media screen and (width: 375px) {
+    html {
+        font-size: (375px / $copies);
+    }
+}
+
+@media screen and (width: 411px) {
+    html {
+        font-size: (411px / $copies);
+    }
+}
+
+
+@media screen and (width: 1536px) {
+    html {
+        font-size: (1536px / $copies);
+    }
+}
+
+
+/*  头部  */
+header {
     float: left;
     width: 100%;
     height: (45rem / $piece);
     border-bottom: 1px solid #eeeeee;
 }
 
-.header-left{
+.header-left {
     float: left;
     width: 33%;
     height: 100%;
     border-right: 1px solid #eeeeee;
 
-    i{
+    i {
         float: right;
         line-height: (50rem / $piece);
         color: #666666;
-        margin-right: (15rem  / $piece);
+        margin-right: (15rem / $piece);
+        font-size: (13rem / $piece);
     }
 }
 
-.header-center{
+.header-center {
     float: left;
     width: 27%;
     height: 100%;
     border-right: 1px solid #eeeeee;
     text-align: center;
-    line-height: (50rem / $piece); 
-    
-    
+    line-height: (50rem / $piece);
+    font-size: (13rem / $piece);
 
-    a,span{
+
+
+    a,
+    span {
+        font-size: (13rem / $piece);
         font-weight: bold;
         color: #666666;
     }
- 
+
 }
 
-.header-right{
+.header-right {
     float: left;
     line-height: (45rem / $piece);
 
-    .header-right-content{
+    .header-right-content {
         position: relative;
         width: (85rem / $piece);
         height: 100%;
 
 
-        img{
+        img {
             float: left;
             width: (16rem / $piece);
             height: (15rem / $piece);
             margin: (17rem / $piece) (7rem / $piece) 0 (15rem / $piece);
         }
-    
-        span{
-            font: 12px/1.14 arial,"Microsoft YaHei";
+
+        span {
+            font: 12px/1.14 arial, "Microsoft YaHei";
             color: #666666;
             font-weight: bold;
         }
-    
-        i{
+
+        i {
             font-weight: bold;
         }
     }
 }
 
-.content-language{
+.content-language {
     display: none;
     position: absolute;
     top: 100%;
@@ -96,19 +121,19 @@ header{
 
 
 
-    li{
+    li {
         width: (157rem / $piece);
         height: (44rem / $piece);
         border-left: 1px solid #f5f5f5;
         border-bottom: 1px solid #f5f5f5;
 
-        img{
+        img {
             width: (16rem / $piece);
             height: (15rem / $piece);
             margin: 0 (10rem / $piece);
         }
 
-        span{
+        span {
             display: inline-block;
             padding-top: (17rem / $piece);
             color: #666666;
@@ -116,8 +141,8 @@ header{
     }
 }
 
-
-nav{
+/*  导航栏  */
+nav {
     position: relative;
     float: left;
     width: 100%;
@@ -125,74 +150,74 @@ nav{
     box-sizing: border-box;
 }
 
-.nav-left{
+.nav-left {
     float: left;
     width: (44rem / $piece);
-    height: 100%;
-    height: 100%;
+    height: (55rem / $piece);
     text-align: center;
     line-height: (55rem / $piece);
     font-size: (15rem / $piece);
 }
 
-.nav-center{
+.nav-center {
     position: absolute;
-    float:left;
+    float: left;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    height: 100%;
+    margin: 0 auto;
+    height: (55rem / $piece);
     width: (145rem / $piece);
-    height: 100%;
     z-index: 1;
 
-    img{
+    img {
         width: (145rem / $piece);
-        height: (50rem / $piece);       
+        height: (50rem / $piece);
     }
 }
 
 
-.nav-right{
+.nav-right {
     float: right;
     width: (44rem / $piece);
-    height: 100%;
+    height: (55rem / $piece);
     text-align: center;
     line-height: (55rem / $piece);
     font-size: (15rem / $piece);
     z-index: 1;
 }
 
-.nav-list{
-    visibility: hidden;
-    position: absolute;
+.nav-list {
+    // position: absolute;
+    display: none;
+    float: left;
     width: 100%;
     height: (208rem / $piece);
     padding: 0 (27rem / $piece);
     top: 100%;
     left: 0;
     box-sizing: border-box;
-    
+    background-color: #ffffff;
 
 
-    li{
+
+    li {
         width: 100%;
         height: (52rem / $piece);
         border-bottom: 1px solid #eeeeee;
-        
-        
-        a{
+
+
+        a {
             font-size: (18rem / $piece);
             padding-left: (7rem / $piece);
             color: #444;
             line-height: (52rem / $piece);
-            font-family: Raleway,sans-serif;
+            font-family: Raleway, sans-serif;
             font-weight: bold;
         }
 
-        i{
+        i {
             float: right;
             padding-right: (15rem / $piece);
             line-height: (52rem / $piece);
@@ -202,11 +227,1678 @@ nav{
     }
 }
 
+/*  主体  */
+main {
+    float: left;
+    width: 100%;
+    // height: (10000rem / $piece);
+
+    .main-header {
+        width: 100%;
+        height: (200rem / $piece);
+        padding: 0 (28rem / $piece);
+        box-sizing: border-box;
+        background-color: #181534;
+        text-align: center;
+
+
+        img {
+            width: (320rem / $piece);
+            height: (100rem / $piece);
+            margin: (50rem / $piece) 0;
+        }
+    }
+
+    .main-container {
+        padding: 0 (28rem / $piece);
+    }
+}
+
+.main-title {
+    width: 100%;
+    height: (1310rem / $piece);
+
+    .main-title-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (187rem / $piece);
+        margin: (17rem / $piece) 0 (10rem / $piece);
+        background-size: 100% 100%;
+
+    }
+
+    .main-title-content:nth-child(1) {
+        background-image: url(../upload/head/head_one.jpg);
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            bottom: (13rem / $piece);
+            padding: 0 (13rem / $piece) 0;
+            font-size: (22rem / $piece);
+            font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+            color: #eeeeee;
+            text-shadow: 1px 1px 2px #000;
+        }
+    }
+
+    .main-title-content:nth-child(2) {
+        background-image: url(../upload/head/head_two.jpg);
+        box-shadow: 0px -8px 20px #110f1a inset;
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            bottom: (5rem / $piece);
+            padding: 0 (13rem / $piece) 0;
+            font-size: (17rem / $piece);
+            font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+            color: #eeeeee;
+            text-shadow: 0px -8px 20px #110f1a;
+        }
+    }
 
 
 
+    .main-title-content:nth-child(3) {
+        background-image: url(../upload/head/head_three.jpg);
+        box-shadow: 0px -8px 20px #110f1a inset;
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            bottom: (5rem / $piece);
+            padding: 0 (13rem / $piece) 0;
+            font-size: (17rem / $piece);
+            font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+            color: #eeeeee;
+            text-shadow: 0px -8px 20px #110f1a;
+        }
+    }
+
+    .main-title-content:nth-child(6) {
+        background-image: url(../upload/head/head_four.jpg);
+
+        h2 {
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            bottom: (13rem / $piece);
+            padding: 0 (13rem / $piece) 0;
+            font-size: (22rem / $piece);
+            font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+            color: #eeeeee;
+            text-shadow: 1px 1px 2px #000;
+        }
+    }
+}
+
+
+.main-icons-link {
+    float: left;
+    width: 100%;
+    height: (190rem / $piece);
+    margin: (17rem / $piece) 0 (10rem / $piece);
+
+    .item {
+        float: left;
+        width: (86rem / $piece);
+        height: (95rem / $piece);
+        background-color: #eb4e30;
+        border-right: 1px dotted #ff7f61;
+        border-bottom: 1px dotted #ff7f61;
+        text-align: center;
+        line-height: (95rem / $piece);
+
+        i {
+            display: block;
+            font-size: (40rem / $piece);
+            color: #ec9e8f;
+        }
+    }
+}
 
 
 
+.swiper-container {
+    float: left;
+    width: (344rem / $piece);
+    height: (190rem / $piece);
+    margin: (17rem / $piece) 0 (10rem / $piece);
+    overflow: hidden;
+    box-sizing: border-box;
 
+    .swiper-wrapper {
+        width: (3784rem / $piece);
+        height: (190rem / $piece);
+
+
+        .swiper-slide {
+            position: relative;
+            float: left;
+            width: (344rem / $piece);
+            height: 100%;
+        }
+    }
+}
+
+.swiper-slide img {
+    width: (344rem / $piece);
+    height: 100%;
+}
+
+
+.swiper-slide h2 {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: (5rem / $piece);
+    padding: 0 (13rem / $piece) 0;
+    font-size: (17rem / $piece);
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    color: #eeeeee;
+    text-shadow: 5px 5px 10px #000;
+}
+
+
+/* 主体 24小时推荐  */
+.main-hourRecommend {
+    float: left;
+    width: 100%;
+    height: (600rem / $piece);
+}
+
+.nav {
+    float: left;
+    width: 100%;
+    height: (41rem / $piece);
+    margin-bottom: (17rem / $piece);
+    border-bottom: 1px solid #dddddd;
+
+
+
+    h3 {
+        float: left;
+        font-size: (18rem / $piece);
+        border-bottom: 2px solid #eb4e30;
+        padding-bottom: (14rem / $piece);
+        margin-top: (5rem / $piece);
+        font-family: inherit;
+        font-weight: bold;
+        color: #444444;
+    }
+
+    a {
+        display: block;
+        float: right;
+        padding-top: (8rem / $piece);
+        margin-right: (5rem / $piece);
+        color: #AAAAAA;
+        font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    }
+}
+
+
+.hourRecommend-content {
+    float: left;
+    width: 100%;
+    height: (513rem / $piece);
+    background-color: #f1f1f1;
+    background-image: url(../upload/hour_recommend/24h.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+
+.h24 {
+    position: relative;
+    height: (85rem / $piece);
+    overflow: hidden;
+    padding: (7rem / $piece);
+    border-bottom: 1px dotted #fff;
+
+    .h24-img {
+        float: left;
+        width: (54rem / $piece);
+        height: (54rem / $piece);
+        margin-bottom: (15rem / $piece);
+        opacity: .6;
+
+        img {
+            width: (54rem / $piece);
+            height: (54rem / $piece);
+        }
+    }
+
+    small {
+        display: block;
+        padding-left: (60rem / $piece);
+        color: #AAA;
+        font-size: (13rem / $piece);
+        box-sizing: border-box;
+        line-height: (19rem /$piece);
+    }
+}
+
+
+.h24-title {
+    top: 0;
+    float: left;
+    margin: 0;
+    width: (269rem / $piece);
+    padding-left: (6rem / $piece);
+    margin-bottom: (6rem / $piece);
+    color: #888;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    line-height: (16rem / $piece);
+    font-weight: bold;
+
+    span {
+        float: left;
+        display: block;
+        width: (28rem / $piece);
+        height: (16rem / $piece);
+        margin-right: (3rem / $piece);
+        border-radius: 2px;
+        text-align: center;
+        line-height: (16rem / $piece);
+        background-color: #888888;
+        color: #eaeeee;
+        font-size: (12rem / $piece);
+    }
+}
+
+
+.time {
+    position: absolute;
+    bottom: (5rem / $piece);
+    float: left;
+    display: block;
+    width: (66rem / $piece);
+    font-family: Saira, sans-serif;
+    color: #AAA;
+    font-size: (10rem /$piece);
+}
+
+
+.recommendations {
+    float: left;
+    width: 100%;
+    height: (707rem / $piece);
+    overflow: hidden;
+
+    .recommendations-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (330rem / $piece);
+        background-image: url(../upload/recommendations/recommendations_1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+.recommendations-content h4 {
+    position: absolute;
+    bottom: (10rem / $piece);
+    box-sizing: border-box;
+    padding: 0 (15rem / $piece);
+    margin: 0;
+    color: #ddd;
+    font-size: (18rem / $piece);
+    font-weight: bold;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    text-shadow: 1px 1px 2px #000;
+
+    small {
+        display: block;
+        margin-bottom: (8rem / $piece);
+        font-size: (14rem / $piece);
+        font-weight: 400;
+        font-family: Saira, sans-serif;
+        color: #cccccc;
+    }
+}
+
+.content-list {
+    float: left;
+
+    li {
+        float: left;
+        width: 100%;
+        height: (91rem / $piece);
+        padding: (13rem / $piece) 0;
+        border-bottom: 1px solid #dddddd;
+
+        img {
+            float: left;
+            width: (63rem / $piece);
+            height: (63rem / $piece);
+        }
+
+        h4 {
+            display: inline-block;
+            padding-bottom: (10rem / $piece);
+            margin: 0 0 0 (8rem / $piece);
+            font-size: (14rem / $piece);
+            color: #cccccc;
+        }
+
+        p {
+            // float:left;
+            margin-left: (72rem / $piece);
+            font-size: (15rem / $piece);
+        }
+    }
+}
+
+
+
+/* 会员游戏  */
+.vip-games {
+    float: left;
+    width: 100%;
+    height: (890rem / $piece);
+    overflow: hidden;
+
+    .vip-games-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (235rem / $piece);
+        background-image: url(../upload/vip/vip_games_1.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+.vip-games-content h4 {
+    position: absolute;
+    bottom: (10rem / $piece);
+    box-sizing: border-box;
+    padding: 0 (15rem / $piece);
+    margin: 0;
+    color: #ddd;
+    font-size: (18rem / $piece);
+    font-weight: bold;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    text-shadow: 1px 1px 2px #000;
+
+    small {
+        display: block;
+        margin-bottom: (8rem / $piece);
+        font-size: (14rem / $piece);
+        font-weight: 400;
+        font-family: Saira, sans-serif;
+        color: #cccccc;
+    }
+}
+
+
+.vip-content-list {
+    float: left;
+
+    li {
+        float: left;
+        width: 100%;
+        height: (91rem / $piece);
+        padding: (13rem / $piece) 0;
+        border-bottom: 1px solid #dddddd;
+
+        img {
+            float: left;
+            width: (101rem / $piece);
+            height: (62rem / $piece);
+        }
+
+        h4 {
+            display: inline-block;
+            padding-bottom: (10rem / $piece);
+            margin: 0 0 0 (8rem / $piece);
+            font-size: (14rem / $piece);
+            color: #cccccc;
+        }
+
+        p {
+            // float:left;
+            margin-left: (108rem / $piece);
+            font-size: (15rem / $piece);
+        }
+    }
+}
+
+
+.sponsored-content {
+    float: left;
+    width: 100%;
+    height: (410rem / $piece);
+    margin-bottom: (16rem / $piece);
+
+    .sponsored-img {
+        float: left;
+        width: (344rem / $piece);
+        height: (344rem / $piece);
+        border: 1px solid #dddddd;
+        text-align: center;
+        line-height: (344rem / $piece);
+
+        img {
+            width: (313rem / $piece);
+            height: (313rem / $piece);
+        }
+    }
+}
+
+
+/* 测试 */
+.test {
+    float: left;
+    width: 100%;
+    height: (288rem / $piece);
+}
+
+/* 测试列表 */
+.test-list {
+    float: left;
+    width: 100%;
+
+    li {
+        width: 100%;
+        height: (25rem / $piece);
+        margin-bottom: (10rem / $piece);
+
+        a {
+            font-size: (16rem / $piece);
+            color: #000;
+        }
+
+        span {
+            width: (96rem / $piece);
+            display: inline-block;
+            background-color: #cccccc;
+            border-radius: 4px;
+            margin-right: (8rem / $piece);
+            color: #fff;
+            padding: 0 (7rem / $piece);
+            font-family: Saira, sans-serif;
+        }
+    }
+}
+
+
+/*  广告导航  */
+.test-nav {
+    float: left;
+    width: 100%;
+    height: (112rem / $piece);
+    padding: (15rem / $piece) 0;
+    box-sizing: border-box;
+
+    div {
+        float: left;
+        width: (160rem / $piece);
+        margin-bottom: (5rem / $piece);
+
+        img {
+            width: (160rem / $piece);
+            height: (34rem / $piece);
+            opacity: .3;
+        }
+    }
+}
+
+.test-nav div:nth-child(2n+1) {
+    margin-right: (22rem / $piece);
+}
+
+
+
+/*  小广告行  */
+.home-block-gray {
+    float: left;
+    width: 100%;
+    height: (2280rem / $piece);
+    padding: (55rem / $piece) 0 (35rem / $piece) 0;
+    background-color: #f4f4f4;
+
+}
+
+
+/* 广告行 版心 */
+.home-container {
+    padding: 0 (28rem / $piece);
+}
+
+
+/*  热门游戏  */
+.hot-games {
+    float: left;
+    width: 100%;
+    height: (705rem / $piece);
+}
+
+
+.hot-games-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (343rem / $piece);
+    background-image: url(../upload/hot_game/hot-game_header.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: (6rem / $piece);
+}
+
+
+.hot-games-content h4 {
+    position: absolute;
+    bottom: (10rem / $piece);
+    box-sizing: border-box;
+    padding: 0 (15rem / $piece);
+    margin: 0;
+    color: #ddd;
+    font-size: (18rem / $piece);
+    font-weight: bold;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    text-shadow: 1px 1px 2px #000;
+
+    small {
+        display: block;
+        margin-bottom: (8rem / $piece);
+        font-size: (14rem / $piece);
+        font-weight: 400;
+        font-family: Saira, sans-serif;
+        color: #cccccc;
+    }
+}
+
+
+.home-list {
+    float: left;
+
+    li {
+        float: left;
+        width: 100%;
+        height: (91rem / $piece);
+        padding: (13rem / $piece) 0;
+        border-bottom: 1px solid #dddddd;
+
+        img {
+            float: left;
+            width: (63rem / $piece);
+            height: (63rem / $piece);
+
+        }
+
+        h4 {
+            // float:left;
+            margin: 0;
+            margin-left: (74rem / $piece);
+            font-size: (15rem / $piece);
+            font-family: Saira, sans-serif;
+            // padding-bottom: (5rem / $piece);
+        }
+
+        p {
+            display: inline-block;
+            padding-bottom: (5rem / $piece);
+            margin: 0 0 0 (10rem / $piece);
+            font-size: (14rem / $piece);
+            color: #cccccc;
+        }
+
+        span {
+            display: inline-block;
+            color: #333;
+            margin-left: (12rem / $piece);
+            font-family: Abel, sans-serif;
+            font-size: (12rem /$piece);
+        }
+    }
+}
+
+
+/*  最近游戏文章  */
+.recent-games {
+    float: left;
+    width: 100%;
+    height: (890rem / $piece);
+}
+
+.recent-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (230rem / $piece);
+    background-image: url(../upload/recent_games/recent_games_1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: (6rem / $piece);
+}
+
+.recent-content h4 {
+    position: absolute;
+    bottom: (10rem / $piece);
+    box-sizing: border-box;
+    padding: 0 (15rem / $piece);
+    margin: 0;
+    color: #ddd;
+    font-size: (18rem / $piece);
+    font-weight: bold;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    text-shadow: 1px 1px 2px #000;
+
+    small {
+        display: block;
+        margin-bottom: (8rem / $piece);
+        font-size: (14rem / $piece);
+        font-weight: 400;
+        font-family: Saira, sans-serif;
+        color: #cccccc;
+    }
+}
+
+
+
+/*  历史游戏回顾  */
+.history-games {
+    float: left;
+    width: 100%;
+    height: (288rem / $piece);
+}
+
+.history-list {
+    float: left;
+    width: 100%;
+
+    li {
+        width: 100%;
+        height: (25rem / $piece);
+        margin-bottom: (10rem / $piece);
+
+        a {
+            font-size: (16rem / $piece);
+            color: #000;
+        }
+
+        span {
+            width: (56rem / $piece);
+            display: inline-block;
+            background-color: #cccccc;
+            border-radius: 4px;
+            margin-right: (8rem / $piece);
+            color: #fff;
+            padding: 0 (7rem / $piece);
+            font-family: Saira, sans-serif;
+        }
+    }
+}
+
+
+/* 次行 */
+.home-block-white {
+    float: left;
+    width: 100%;
+    height: (2200rem / $piece);
+    padding: (55rem / $piece) 0 (35rem / $piece) 0;
+}
+
+
+/*  开发素材  */
+.material-development {
+    float: left;
+    width: 100%;
+    height: (721rem / $piece);
+}
+
+.material-development-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (343rem / $piece);
+    background-image: url(../upload/material_development/material_head.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: (6rem / $piece);
+}
+
+
+.material-development-content h4 {
+    position: absolute;
+    bottom: (10rem / $piece);
+    box-sizing: border-box;
+    padding: 0 (15rem / $piece);
+    margin: 0;
+    color: #ddd;
+    font-size: (18rem / $piece);
+    font-weight: bold;
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+    text-shadow: 1px 1px 2px #000;
+
+    small {
+        display: block;
+        margin-bottom: (8rem / $piece);
+        font-size: (14rem / $piece);
+        font-weight: 400;
+        font-family: Saira, sans-serif;
+        color: #cccccc;
+    }
+}
+
+
+/* 最近开发文章 */
+.recent_development {
+    float: left;
+    width: 100%;
+    height: (880rem / $piece);
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (230rem / $piece);
+        background-image: url(../upload/recent_development/recent_development_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+/* 活动日历 */
+.active-calendar {
+    float: left;
+    width: 100%;
+    height: (427rem / $piece);
+    margin-bottom: (14rem / $piece);
+}
+
+
+.calendar-all {
+    float: left;
+    width: 100%;
+    height: (25rem / $piece);
+    margin-top: (15rem / $piece);
+    text-align: center;
+
+    i {
+        color: #aaaaaa;
+    }
+}
+
+/*  会员内容  */
+.member-content {
+    float: left;
+    width: 100%;
+    // height: (1360rem / $piece);
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+
+    .member-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 (28rem / $piece);
+        margin: (35rem / $piece) 0;
+    }
+}
+
+/*  最近会员游戏  */
+.recent_member_games {
+    float: left;
+    width: 100%;
+    height: (400rem / $piece);
+}
+
+
+.member-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (120rem / $piece);
+    background-color: #ffffff;
+    margin-bottom: (11rem / $piece);
+
+    .member-title {
+        position: absolute;
+        bottom: 0;
+        left: (10rem / $piece);
+        width: (230rem / $piece);
+        height: (45rem / $piece);
+        color: #aaaaac;
+        font-weight: bold;
+        font-family: inherit;
+        font-size: (16rem / $piece);
+    }
+
+    .member-img {
+        float: right;
+        margin: (12rem / $piece);
+        width: (85rem / $piece);
+        height: (85rem / $piece);
+    }
+}
+
+.member-list {
+    float: left;
+    width: 100%;
+    height: (156rem / $piece);
+    margin-bottom: (32rem / $piece);
+
+    li {
+        height: (35rem / $piece);
+        padding: (8rem / $piece) 0;
+    }
+}
+
+.member-list-content {
+    // display: block;
+    color: #333333;
+    font-size: (16rem / $piece);
+
+    i {
+        line-height: (23rem / $piece);
+        font-size: (16rem / $piece);
+        color: #aaacba;
+        padding-right: (9rem / $piece);
+    }
+}
+
+
+/*  最近会员日志  */
+.recent_member_note {
+    float: left;
+    width: 100%;
+    height: (400rem / $piece);
+}
+
+/*  最近小组内容  */
+.recent_group_content {
+    float: left;
+    width: 100%;
+    height: (430rem / $piece);
+}
+
+
+
+/* 游戏库内容 */
+.game_library_content {
+    float: left;
+    width: 100%;
+    height: (2910rem / $piece);
+    padding: (55rem / $piece) 0 (35rem / $piece) 0;
+
+
+    .gameLibrary-container {
+        height: 100%;
+        padding: 0 (28rem / $piece);
+    }
+}
+
+
+/*  最近发售游戏  */
+.recently-sold-games {
+    float: left;
+    width: 100%;
+    height: (721rem / $piece);
+
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (343rem / $piece);
+        background-image: url(../upload/recently_sold_games/sold_games_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+/*  即将发售游戏  */
+.coming-soon {
+    float: left;
+    width: 100%;
+    height: (721rem / $piece);
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (343rem / $piece);
+        background-image: url(../upload/coming_soon/coming_soon_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+
+/*  近期玩家想玩榜  */
+.player-want {
+    float: left;
+    width: 100%;
+    height: (396rem / $piece);
+}
+
+.player-list {
+    float: left;
+    width: 100%;
+    height: (270rem / $piece);
+
+    li {
+
+        width: 100%;
+        height: (40rem / $piece);
+        margin-bottom: (5rem / $piece);
+
+    }
+}
+
+.player-list-content {
+    display: inline-block;
+    width: 100%;
+    height: (50rem / $piece);
+    padding: (8rem / $piece);
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: (15rem /$piece);
+    font-family: Abel, sans-serif;
+    color: #aaaaac;
+    line-height: (26rem / $piece);
+
+    span {
+        float: left;
+        display: block;
+        width: (29rem / $piece);
+        height: (29rem / $piece);
+        margin-right: (7rem / $piece);
+        font-family: Saira, sans-serif;
+        text-align: center;
+        font-size: (15rem / $piece);
+        line-height: (29rem / $piece);
+        font-weight: 500;
+        border-radius: 50%;
+        color: #aaaaaa;
+        background-color: #444444;
+    }
+
+
+    img {
+        width: (30rem / $piece);
+        height: (30rem / $piece);
+        margin-right: (5rem / $piece);
+    }
+
+
+}
+
+
+.player-list li:nth-child(1) a span {
+    color: #ffffff;
+    background-color: #06a847;
+}
+
+.player-list li:nth-child(2) a span {
+    color: #ffffff;
+    background-color: #068a38;
+}
+
+.player-list li:nth-child(3) a span {
+    color: #ffffff;
+    background-color: #066929;
+}
+
+
+
+/*  近期玩家关注榜  */
+.player-attention {
+    float: left;
+    width: 100%;
+    height: (396rem / $piece);
+}
+
+
+
+/* 游戏库状态 */
+.gameLibrary-state {
+    float: left;
+    width: 100%;
+    height: (300rem / $piece);
+
+}
+
+.gameLibrary-state-list {
+    float: left;
+    width: 100%;
+    height: (180rem / $piece);
+
+    li {
+        font-size: (16rem / $piece);
+        color: #555;
+        margin-bottom: (5rem / $piece);
+        padding-bottom: (6rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+        span {
+            float: right;
+            margin-right: (5rem / $piece);
+            font-family: Saira, sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+/*  近期会员游戏库贡献  */
+.gameLibrary-contribution {
+    float: left;
+    width: 100%;
+    height: (300rem / $piece);
+}
+
+
+.gameLibrary-contribution-list {
+    float: left;
+    width: 100%;
+    height: (180rem / $piece);
+
+    li {
+        font-size: (16rem / $piece);
+        color: #555;
+        margin-bottom: (5rem / $piece);
+        padding-bottom: (6rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+        img {
+            width: (20rem / $piece);
+            height: (20rem / $piece);
+            border-radius: 50%;
+            margin-right: (7rem / $piece);
+        }
+
+        span {
+            float: right;
+            margin-right: (5rem / $piece);
+            font-family: Saira, sans-serif;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+/*  专题  */
+.subject {
+    float: left;
+    width: 100%;
+    height: (2960rem / $piece);
+    padding: (55rem / $piece) 0 (35rem / $piece) 0;
+    background-color: #f4f4f4;
+
+
+    .recentProjects-container {
+        height: 100%;
+        padding: 0 (28rem / $piece);
+    }
+}
+
+/* 最近专题 */
+.recent-projects {
+    float: left;
+    width: 100%;
+    height: (715rem / $piece);
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (343rem / $piece);
+        background-image: url(../upload/subject/subject_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+/*  近期活跃作者  */
+.active-author {
+    float: left;
+    width: 100%;
+    height: (300rem / $piece);
+}
+
+
+.active-author-list {
+    float: left;
+    width: 100%;
+    height: (180rem / $piece);
+
+    li {
+        font-size: (16rem / $piece);
+        color: #555;
+        margin-bottom: (5rem / $piece);
+        padding-bottom: (6rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+        img {
+            width: (20rem / $piece);
+            height: (20rem / $piece);
+            border-radius: 50%;
+            margin-right: (7rem / $piece);
+        }
+
+        span {
+            float: right;
+            margin-right: (5rem / $piece);
+            font-family: Saira, sans-serif;
+            font-weight: 500;
+            color: #aaaaaa;
+        }
+    }
+}
+
+
+/*  近期活跃会员  */
+.active-member {
+    float: left;
+    width: 100%;
+    height: (300rem / $piece);
+}
+
+.active-member-list {
+    float: left;
+    width: 100%;
+    height: (180rem / $piece);
+
+    li {
+        font-size: (16rem / $piece);
+        color: #555;
+        margin-bottom: (5rem / $piece);
+        padding-bottom: (6rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+        img {
+            width: (20rem / $piece);
+            height: (20rem / $piece);
+            border-radius: 50%;
+            margin-right: (7rem / $piece);
+        }
+
+        span {
+            float: right;
+            margin-right: (5rem / $piece);
+            font-family: Saira, sans-serif;
+            font-weight: 500;
+            color: #aaaaaa;
+        }
+    }
+}
+
+
+
+/*  推荐会员  */
+.recommend-member {
+    float: left;
+    width: 100%;
+    height: (300rem / $piece);
+}
+
+.recommend-member-list {
+    float: left;
+    width: 100%;
+    height: (180rem / $piece);
+
+    li {
+        font-size: (16rem / $piece);
+        color: #555;
+        margin-bottom: (5rem / $piece);
+        padding-bottom: (6rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+        img {
+            width: (20rem / $piece);
+            height: (20rem / $piece);
+            border-radius: 50%;
+            margin-right: (7rem / $piece);
+        }
+
+        span {
+            float: right;
+            margin-right: (5rem / $piece);
+            font-family: Saira, sans-serif;
+            font-weight: 500;
+            color: #aaaaaa;
+        }
+    }
+}
+
+
+
+/*  文章  */
+.article {
+    float: left;
+    width: 100%;
+    height: (1860rem / $piece);
+    padding: (55rem / $piece) 0 (35rem / $piece) 0;
+
+
+    .article-container {
+        height: 100%;
+        padding: 0 (28rem / $piece);
+    }
+}
+
+/*  精选游戏文章  */
+.selected-game-article {
+    float: left;
+    width: 100%;
+    height: (900rem / $piece);
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (235rem / $piece);
+        background-image: url(../upload/selected-game-article/selected_game_article_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+/*  精选开发文章  */
+.selected-development-articles {
+    float: left;
+    width: 100%;
+    height: (900rem / $piece);
+
+    .recent-content {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: (235rem / $piece);
+        background-image: url(../upload/selected_development_articles/selected-development-articles_head.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: (6rem / $piece);
+    }
+}
+
+
+
+/*  目录  */
+.direct-list {
+    float: left;
+    width: 100%;
+    height: (500rem / $piece);
+    padding: (33rem / $piece) 0 (35rem / $piece) 0;
+    background-color: #f4f4f4;
+
+    .direct-container {
+        height: 100%;
+        padding: 0 (14rem / $piece);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}
+
+.direct {
+    float: left;
+    width: (124rem / $piece);
+    height: (160rem / $piece);
+    padding: 0 (12rem / $piece);
+    box-sizing: border-box;
+
+
+    div {
+        width: (100rem / $piece);
+        height: (130rem / $piece);
+        padding: (22rem / $piece) 0;
+        margin-bottom: (33rem / $piece);
+        background-color: #fafafa;
+        color: #aaaaaa;
+    }
+
+    i {
+        font-size: (33rem / $piece);
+        margin: 0 (33rem / $piece) (12rem / $piece);
+    }
+
+    span {
+        display: block;
+        font-size: (14rem / $piece);
+        padding: (6rem / $piece) (10rem / $piece);
+        text-align: center;
+    }
+}
+
+.direct:nth-child(4) {
+    float: right;
+}
+
+
+.nove-friend {
+    float: left;
+    width: 100%;
+    height: (68rem / $piece);
+    padding: (20rem / $piece) (20rem / $piece);
+    border-bottom: 1px solid #ffffff;
+    font-size: (20rem / $piece);
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #eeeeee;
+    color: #444444;
+}
+
+
+.link {
+    float: left;
+    width: 100%;
+    height: (190rem / $piece);
+    padding: (32rem / $piece) 0 (86rem / $piece);
+    background-color: #f4f4f4;
+
+
+    .link-container {
+        width: 100%;
+        height: (65rem / $piece);
+        padding: 0 (27rem / $piece);
+    }
+}
+
+.link-container p a:nth-child(1) {
+    border: 1px solid #888;
+    color: #888;
+    padding: (3rem / $piece) (6rem / $piece);
+}
+
+
+/*  尾部  */
+footer {
+    float: left;
+    width: 100%;
+    background-color: #333333;
+    border-top: 5px solid #292929;
+
+    .container {
+        padding: 0 (28rem / $piece);
+    }
+}
+
+.content {
+    width: 100%;
+    height: (1550rem / $piece);
+    padding: (83rem / $piece) 0;
+
+    .footer-logo {
+        width: (134rem / $piece);
+        height: (54rem / $piece);
+        margin-bottom: (33rem / $piece);
+    }
+}
+
+.footer-nav {
+    color: #a6a6a6;
+    font-size: (15rem / $piece);
+    margin-bottom: (33rem / $piece);
+}
+
+.link-icon {
+    width: 100%;
+    height: (38rem / $piece);
+
+    i {
+        float: left;
+        display: block;
+        width: (32rem / $piece);
+        height: (32rem / $piece);
+        border-radius: 50%;
+        color: #dddddd;
+        text-align: center;
+        line-height: (32rem / $piece);
+        border: 1px solid #b5b5b5;
+        margin-right: (5rem / $piece);
+    }
+}
+
+
+.serverId {
+    width: 100%;
+    height: (44rem / $piece);
+    margin-bottom: (40rem / $piece);
+    color: #777777;
+    line-height: (62rem / $piece);
+    font-size: (13rem / $piece);
+}
+
+
+.attentionUs {
+    float: left;
+    width: 100%;
+    height: (25rem / $piece);
+    color: #dddddd;
+    font-size: (17rem / $piece);
+    letter-spacing: 2;
+    font-weight: bold;
+    margin-bottom: (28rem / $piece);
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+}
+
+
+.qr-code {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (150rem / $piece);
+    text-align: center;
+    margin-bottom: (43rem / $piece);
+
+    img {
+        width: (118rem / $piece);
+        height: (118rem / $piece);
+        padding: (11rem / $piece);
+    }
+
+    span {
+        position: absolute;
+        bottom: 5%;
+        left: 28%;
+        display: inline-block;
+        font-size: (13rem / $piece);
+        color: #a2a2a2;
+        font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+
+    }
+}
+
+
+.footer-nav-content {
+    float: left;
+    width: 100%;
+    height: (235rem / $piece);
+    margin-bottom: (60rem / $piece);
+
+
+    li {
+        height: (30rem / $piece);
+        padding: (5rem / $piece);
+        background-image: url(../img/widget-link-dark@2x.png);
+        background-repeat: no-repeat;
+        font-size: (16rem / $piece);
+        color: #cccccc;
+        line-height: (34rem / $piece);
+    }
+}
+
+
+.call-we {
+    float: left;
+    width: 100%;
+    height: (42rem / $piece);
+    margin-bottom: (33rem / $piece);
+    color: #adadad;
+}
+
+
+.username {
+    float: left;
+    width: 100%;
+    height: (37rem / $piece);
+    margin-bottom: (12rem / $piece);
+
+    span {
+        float: left;
+        padding: (10rem / $piece) (12rem / $piece);
+        font-size: (16rem / $piece);
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-color: #212121;
+
+        i {
+            color: #999999;
+            font-size: (16rem / $piece);
+        }
+    }
+
+    input {
+        float: left;
+        width: 88%;
+        height: (37rem / $piece);
+        padding: (6rem / $piece) (12rem / $piece);
+        color: #999;
+        background-color: rgba(0, 0, 0, .2);
+        border: 1px solid #1e1e1e;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+
+
+.email {
+    float: left;
+    width: 100%;
+    height: (37rem / $piece);
+    margin-bottom: (12rem / $piece);
+
+    span {
+        float: left;
+        padding: (10rem / $piece) (12rem / $piece);
+        font-size: (16rem / $piece);
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-color: #212121;
+
+        i {
+            color: #999999;
+            font-size: (16rem / $piece);
+        }
+    }
+
+    input {
+        float: left;
+        width: 88%;
+        height: (37rem / $piece);
+        padding: (6rem / $piece) (12rem / $piece);
+        color: #999;
+        background-color: #292929;
+        border: 1px solid #1e1e1e;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+
+.message {
+    display: block;
+    width: 100%;
+    height: (87rem / $piece);
+    padding: (6rem / $piece) (12rem / $piece);
+    margin-bottom: (12rem / $piece);
+    box-sizing: border-box;
+    border: 1px solid #1e1e1e;
+    color: #999;
+    background-color: #292929;
+    border-radius: 4px;
+}
+
+
+.sent-message {
+    float: left;
+    width: (88rem / $piece);
+    height: (37rem / $piece);
+    padding: (6rem / $piece) (6rem / $piece);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    font-size: (16rem / $piece);
+    text-align: center;
+    line-height: (22rem / $piece);
+    letter-spacing: normal;
+    word-spacing: normal;
+
+}
+
+
+/* 版权 */
+.footer-copyright {
+    float: left;
+    width: 100%;
+    background-color: #292929;
+
+    .container {
+        padding: 0 (28rem / $piece);
+        
+
+        p{
+            width: 100%;
+            margin-bottom: (12rem / $piece);
+            text-align: center;
+            color: #5e5e5e;
+            font-size: (15rem / $piece);
+        }
+
+        small{
+            font-size: (13rem / $piece);
+            color: #5e5e5e;
+            text-align: center;
+        }
+    }
+}
+
+.copyright-content{
+    width: 100%;
+    height: (260rem / $piece);
+    padding-top: (45rem / $piece);
+}
+
+.copyright-menu{
+    width: 100%;
+    height: (27rem / $piece);
+    margin-bottom: (12rem / $piece);
+    color: #5e5e5e;
+
+    a{
+        font-size: (16rem / $piece);
+        color: #5e5e5e;
+    }
+}
 
