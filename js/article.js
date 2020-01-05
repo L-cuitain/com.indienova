@@ -21,30 +21,51 @@ $(function () {
             //如果隐藏 在点击后这个块 显示列表
             $("#nav-showlist").css("display", "block");
             $("nav").css("height","13.2rem");
+            $(".nav-gray-click").css("top","50%");
         }else{
             //否则 列表隐藏
             $("#nav-showlist").css("display", "none");
             $("nav").css("height","2.75rem");
+            $(".nav-gray-click").css("top","20%");
+        }
+    })
+
+
+    //创建 下拉列表 点击事件
+    $("#nav-gray-getlist").click(function () {
+        //判断列表是否隐藏
+        if ($("#nav-gray-list").css("display")=="none"){
+            //如果隐藏 在点击后这个块 显示列表
+            $("#nav-gray-list").css("display", "block");
+            $("#nav-gray-getlist").css("backgroundColor", "#888888");
+        }else{
+            //否则 列表隐藏
+            $("#nav-gray-list").css("display", "none");
+            $("#nav-gray-getlist").css("backgroundColor", "#aaaaaa");
         }
     })
 
 
     // 轮播图
-    var mySwiper = new Swiper('.swiper-container',{
-        autoplay: true,//可选选项，自动滑动
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
-        direction : 'horizontal',
         speed:300,
-      autoplay : {
-        delay:3000
-      },
-      grabCursor : true,
-      })
+        autoplay : {
+            delay:3000
+        },
+        
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      }) 
 })
-
-
-
-
-
 
 

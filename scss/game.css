@@ -1,0 +1,739 @@
+@charset "UTF-8";
+@media screen and (width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+
+@media screen and (width: 411px) {
+  html {
+    font-size: 20.55px;
+  }
+}
+
+@media screen and (width: 1536px) {
+  html {
+    font-size: 76.8px;
+  }
+}
+
+/*  头部  */
+header {
+  float: left;
+  width: 100%;
+  height: 2.25rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-left {
+  float: left;
+  width: 33%;
+  height: 100%;
+  border-right: 1px solid #eeeeee;
+}
+
+.header-left i {
+  float: right;
+  line-height: 2.5rem;
+  color: #666666;
+  margin-right: 0.75rem;
+  font-size: 0.65rem;
+}
+
+.header-center {
+  float: left;
+  width: 27%;
+  height: 100%;
+  border-right: 1px solid #eeeeee;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 0.65rem;
+}
+
+.header-center a,
+.header-center span {
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: #666666;
+}
+
+.header-right {
+  float: left;
+  line-height: 2.25rem;
+}
+
+.header-right .header-right-content {
+  position: relative;
+  width: 4.25rem;
+  height: 100%;
+}
+
+.header-right .header-right-content img {
+  float: left;
+  width: 0.8rem;
+  height: 0.75rem;
+  margin: 0.85rem 0.35rem 0 0.75rem;
+}
+
+.header-right .header-right-content span {
+  font: 12px/1.14 arial, "Microsoft YaHei";
+  color: #666666;
+  font-weight: bold;
+}
+
+.header-right .header-right-content i {
+  font-weight: bold;
+}
+
+.content-language {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 1px solid #0088cc;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.content-language li {
+  width: 7.85rem;
+  height: 2.2rem;
+  border-left: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.content-language li img {
+  width: 0.8rem;
+  height: 0.75rem;
+  margin: 0 0.5rem;
+}
+
+.content-language li span {
+  display: inline-block;
+  padding-top: 0.85rem;
+  color: #666666;
+}
+
+/*  导航栏  */
+nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 2.75rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav-left {
+  float: left;
+  width: 2.2rem;
+  height: 2.75rem;
+  text-align: center;
+  line-height: 2.75rem;
+  font-size: 0.75rem;
+}
+
+.nav-center {
+  position: absolute;
+  float: left;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 2.75rem;
+  width: 7.25rem;
+  z-index: 1;
+}
+
+.nav-center img {
+  width: 7.25rem;
+  height: 2.5rem;
+}
+
+.nav-right {
+  float: right;
+  width: 2.2rem;
+  height: 2.75rem;
+  text-align: center;
+  line-height: 2.75rem;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+
+.nav-list {
+  display: none;
+  float: left;
+  width: 100%;
+  height: 10.4rem;
+  padding: 0 1.35rem;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.nav-list li {
+  width: 100%;
+  height: 2.6rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nav-list li a {
+  font-size: 0.9rem;
+  padding-left: 0.35rem;
+  color: #444;
+  line-height: 2.6rem;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+}
+
+.nav-list li i {
+  float: right;
+  padding-right: 0.75rem;
+  line-height: 2.6rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/*  主体  */
+main {
+  float: left;
+  width: 100%;
+  padding: 0.9rem 0 5rem;
+  background-color: #f4f4f4;
+}
+
+main .main-container {
+  height: 100%;
+  padding: 0 1.4rem;
+}
+
+.main-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 9.35rem;
+  background-size: 100% 100%;
+  margin-bottom: 1.15rem;
+}
+
+.main-content h2 {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: inherit;
+  color: #eeeeee;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+
+.main-content h3 {
+  position: absolute;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  bottom: 0.65rem;
+  padding: 0 0.65rem 0;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #eeeeee;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #110f1a;
+}
+
+.main-content h4 {
+  position: absolute;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  bottom: 0.25rem;
+  padding: 0 0.65rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+  color: #eeeeee;
+  text-shadow: 0px 0px 4px #110f1a;
+}
+
+.main-content:nth-child(1) {
+  background-image: url(../upload/game/game_1.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #110f1a inset;
+          box-shadow: 0px -26px 22px -9px #110f1a inset;
+}
+
+.main-content:nth-child(2) {
+  background-image: url(../upload/game/game_2.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #777777 inset;
+          box-shadow: 0px -26px 22px -9px #777777 inset;
+}
+
+.main-content:nth-child(3) {
+  background-image: url(../upload/game/game_3.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
+          box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+.main-content:nth-child(4) {
+  background-image: url(../upload/game/game_4.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #585510 inset;
+          box-shadow: 0px -26px 22px -9px #585510 inset;
+}
+
+.main-content:nth-child(5) {
+  background-image: url(../upload/game/game_5.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #41100f inset;
+          box-shadow: 0px -26px 22px -9px #41100f inset;
+}
+
+.main-content:nth-child(6) {
+  background-image: url(../upload/game/game_6.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #383c21 inset;
+          box-shadow: 0px -26px 22px -9px #383c21 inset;
+}
+
+.main-content:nth-child(7) {
+  background-image: url(../upload/game/add_game.jpg);
+}
+
+.main-content:nth-child(8) {
+  background-image: url(../upload/game/find_game.jpg);
+}
+
+.main-content:nth-child(9) {
+  background-image: url(../upload/game/game_7.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
+          box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+.main-content:nth-child(10) {
+  background-image: url(../upload/game/game_8.jpg);
+  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
+          box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+/*  热门导航  */
+.talk-nav {
+  float: left;
+  width: 100%;
+  height: 2.15rem;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+.talk-nav li {
+  float: left;
+  height: 2.1rem;
+  padding: 0 0.85rem;
+  color: #444;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+
+.talk-nav li:nth-child(1) {
+  border-bottom: 2px solid #0088cc;
+}
+
+.host-game-list {
+  float: left;
+  width: 100%;
+  height: 22.25rem;
+  padding-top: 1rem;
+}
+
+.host-game {
+  float: left;
+  width: 8.5rem;
+  height: 7.25rem;
+  padding: 0 0.7rem;
+}
+
+.host-game .game-image {
+  width: 7rem;
+  height: 4rem;
+  margin: 0.75rem 0 0.6rem;
+}
+
+.host-game .game-image img {
+  width: 7rem;
+  height: 4rem;
+}
+
+.host-game h4 {
+  width: 100%;
+  margin: 0;
+  font-size: 0.7rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: #444;
+}
+
+.recently-title {
+  float: left;
+  width: 100%;
+  height: 4.55rem;
+  background-color: #eeeeee;
+  padding: 1.05rem 0;
+  margin: 1.6rem 0;
+}
+
+.recently-title .recently-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.4rem;
+}
+
+.recently-title .recently-container h2 {
+  float: left;
+  color: #444;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+.recently-title .recently-container div {
+  float: right;
+  width: 5.15rem;
+  height: 1.85rem;
+  margin: 0.3rem;
+  padding: 0 1.15rem;
+  background-color: #f9f9f9;
+  font-size: 0.7rem;
+  line-height: 1.85rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.recently-game-list {
+  float: left;
+  width: 100%;
+}
+
+.recently-game-content {
+  float: left;
+  width: 100%;
+  height: 14rem;
+}
+
+.recently-game-content img {
+  width: 100%;
+  height: 9.25rem;
+}
+
+.recently-game-content h3 {
+  margin: 0;
+  width: 100%;
+  height: 1.85rem;
+  padding: 0.3rem 0.55rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.recently-game-content span {
+  display: block;
+  width: 100%;
+  height: 1.85rem;
+  padding: 0 0.55rem 0.3rem;
+  color: #808080;
+  background-color: #ffffff;
+}
+
+.see-more {
+  float: left;
+  width: 100%;
+  width: 100%;
+  height: 11.5rem;
+  padding: 5rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/*  尾部  */
+footer {
+  float: left;
+  width: 100%;
+  background-color: #333333;
+  border-top: 5px solid #292929;
+}
+
+footer .container {
+  padding: 0 1.4rem;
+}
+
+.content {
+  width: 100%;
+  height: 77.5rem;
+  padding: 4.15rem 0;
+}
+
+.content .footer-logo {
+  width: 6.7rem;
+  height: 2.7rem;
+  margin-bottom: 1.65rem;
+}
+
+.footer-nav {
+  color: #a6a6a6;
+  font-size: 0.75rem;
+  margin-bottom: 1.65rem;
+}
+
+.link-icon {
+  width: 100%;
+  height: 1.9rem;
+}
+
+.link-icon i {
+  float: left;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #dddddd;
+  text-align: center;
+  line-height: 1.6rem;
+  border: 1px solid #b5b5b5;
+  margin-right: 0.25rem;
+}
+
+.serverId {
+  width: 100%;
+  height: 2.2rem;
+  margin-bottom: 2rem;
+  color: #777777;
+  line-height: 3.1rem;
+  font-size: 0.65rem;
+}
+
+.attentionUs {
+  float: left;
+  width: 100%;
+  height: 1.25rem;
+  color: #dddddd;
+  font-size: 0.85rem;
+  letter-spacing: 2;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+  font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+}
+
+.qr-code {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 7.5rem;
+  text-align: center;
+  margin-bottom: 2.15rem;
+}
+
+.qr-code img {
+  width: 5.9rem;
+  height: 5.9rem;
+  padding: 0.55rem;
+}
+
+.qr-code span {
+  position: absolute;
+  bottom: 5%;
+  left: 28%;
+  display: inline-block;
+  font-size: 0.65rem;
+  color: #a2a2a2;
+  font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+}
+
+.footer-nav-content {
+  float: left;
+  width: 100%;
+  height: 11.75rem;
+  margin-bottom: 3rem;
+}
+
+.footer-nav-content li {
+  height: 1.5rem;
+  padding: 0.25rem;
+  background-image: url(../img/widget-link-dark@2x.png);
+  background-repeat: no-repeat;
+  font-size: 0.8rem;
+  color: #cccccc;
+  line-height: 1.7rem;
+}
+
+.call-we {
+  float: left;
+  width: 100%;
+  height: 2.1rem;
+  margin-bottom: 1.65rem;
+  color: #adadad;
+}
+
+.username {
+  float: left;
+  width: 100%;
+  height: 1.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.username span {
+  float: left;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #212121;
+}
+
+.username span i {
+  color: #999999;
+  font-size: 0.8rem;
+}
+
+.username input {
+  float: left;
+  width: 88%;
+  height: 1.85rem;
+  padding: 0.3rem 0.6rem;
+  color: #999;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #1e1e1e;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.email {
+  float: left;
+  width: 100%;
+  height: 1.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.email span {
+  float: left;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #212121;
+}
+
+.email span i {
+  color: #999999;
+  font-size: 0.8rem;
+}
+
+.email input {
+  float: left;
+  width: 88%;
+  height: 1.85rem;
+  padding: 0.3rem 0.6rem;
+  color: #999;
+  background-color: #292929;
+  border: 1px solid #1e1e1e;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  height: 4.35rem;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #1e1e1e;
+  color: #999;
+  background-color: #292929;
+  border-radius: 4px;
+}
+
+.sent-message {
+  float: left;
+  width: 4.4rem;
+  height: 1.85rem;
+  padding: 0.3rem 0.3rem;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.1rem;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+/* 版权 */
+.footer-copyright {
+  float: left;
+  width: 100%;
+  background-color: #292929;
+}
+
+.footer-copyright .container {
+  padding: 0 1.4rem;
+}
+
+.footer-copyright .container p {
+  width: 100%;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  color: #5e5e5e;
+  font-size: 0.75rem;
+}
+
+.footer-copyright .container small {
+  font-size: 0.65rem;
+  color: #5e5e5e;
+  text-align: center;
+}
+
+.copyright-content {
+  width: 100%;
+  height: 13rem;
+  padding-top: 2.25rem;
+}
+
+.copyright-menu {
+  width: 100%;
+  height: 1.35rem;
+  margin-bottom: 0.6rem;
+  color: #5e5e5e;
+}
+
+.copyright-menu a {
+  font-size: 0.8rem;
+  color: #5e5e5e;
+}
+/*# sourceMappingURL=game.css.map */

@@ -1,0 +1,771 @@
+// 份数
+$copies : 20;
+
+//一份所占的像素
+$piece : 20;
+
+
+@media screen and (width: 320px) {
+    html {
+        font-size: (320px / $copies);
+    }
+}
+
+@media screen and (width: 360px) {
+    html {
+        font-size: (360px / $copies);
+    }
+}
+
+
+@media screen and (width: 375px) {
+    html {
+        font-size: (375px / $copies);
+    }
+}
+
+@media screen and (width: 411px) {
+    html {
+        font-size: (411px / $copies);
+    }
+}
+
+
+@media screen and (width: 1536px) {
+    html {
+        font-size: (1536px / $copies);
+    }
+}
+
+
+/*  头部  */
+header {
+    float: left;
+    width: 100%;
+    height: (45rem / $piece);
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-left {
+    float: left;
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #eeeeee;
+
+    i {
+        float: right;
+        line-height: (50rem / $piece);
+        color: #666666;
+        margin-right: (15rem / $piece);
+        font-size: (13rem / $piece);
+    }
+}
+
+.header-center {
+    float: left;
+    width: 27%;
+    height: 100%;
+    border-right: 1px solid #eeeeee;
+    text-align: center;
+    line-height: (50rem / $piece);
+    font-size: (13rem / $piece);
+
+
+
+    a,
+    span {
+        font-size: (13rem / $piece);
+        font-weight: bold;
+        color: #666666;
+    }
+
+}
+
+.header-right {
+    float: left;
+    line-height: (45rem / $piece);
+
+    .header-right-content {
+        position: relative;
+        width: (85rem / $piece);
+        height: 100%;
+
+
+        img {
+            float: left;
+            width: (16rem / $piece);
+            height: (15rem / $piece);
+            margin: (17rem / $piece) (7rem / $piece) 0 (15rem / $piece);
+        }
+
+        span {
+            font: 12px/1.14 arial, "Microsoft YaHei";
+            color: #666666;
+            font-weight: bold;
+        }
+
+        i {
+            font-weight: bold;
+        }
+    }
+}
+
+.content-language {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #0088cc;
+    background-color: #fff;
+    z-index: 2;
+
+
+
+    li {
+        width: (157rem / $piece);
+        height: (44rem / $piece);
+        border-left: 1px solid #f5f5f5;
+        border-bottom: 1px solid #f5f5f5;
+
+        img {
+            width: (16rem / $piece);
+            height: (15rem / $piece);
+            margin: 0 (10rem / $piece);
+        }
+
+        span {
+            display: inline-block;
+            padding-top: (17rem / $piece);
+            color: #666666;
+        }
+    }
+}
+
+/*  导航栏  */
+nav {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (55rem / $piece);
+    box-sizing: border-box;
+}
+
+.nav-left {
+    float: left;
+    width: (44rem / $piece);
+    height: (55rem / $piece);
+    text-align: center;
+    line-height: (55rem / $piece);
+    font-size: (15rem / $piece);
+}
+
+.nav-center {
+    position: absolute;
+    float: left;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: (55rem / $piece);
+    width: (145rem / $piece);
+    z-index: 1;
+
+    img {
+        width: (145rem / $piece);
+        height: (50rem / $piece);
+    }
+}
+
+
+.nav-right {
+    float: right;
+    width: (44rem / $piece);
+    height: (55rem / $piece);
+    text-align: center;
+    line-height: (55rem / $piece);
+    font-size: (15rem / $piece);
+    z-index: 1;
+}
+
+.nav-list {
+    // position: absolute;
+    display: none;
+    float: left;
+    width: 100%;
+    height: (208rem / $piece);
+    padding: 0 (27rem / $piece);
+    margin: 0;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+
+    li {
+        width: 100%;
+        height: (52rem / $piece);
+        border-bottom: 1px solid #eeeeee;
+
+
+        a {
+            font-size: (18rem / $piece);
+            padding-left: (7rem / $piece);
+            color: #444;
+            line-height: (52rem / $piece);
+            font-family: Raleway, sans-serif;
+            font-weight: bold;
+        }
+
+        i {
+            float: right;
+            padding-right: (15rem / $piece);
+            line-height: (52rem / $piece);
+            font-size: (18rem / $piece);
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*  主体  */
+main {
+    float: left;
+    width: 100%;
+    padding: (18rem / $piece) 0 (100rem / $piece);
+    background-color: #f4f4f4;
+
+
+    .main-container {
+        height: 100%;
+        padding: 0 (28rem / $piece);
+    }
+}
+
+.main-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (187rem / $piece);
+    background-size: 100% 100%;
+    margin-bottom: (23rem / $piece);
+
+    h2 {
+        position: absolute;
+        bottom: 25%;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: (26rem / $piece);
+        font-family: inherit;
+        color: #eeeeee;
+        font-weight: bold;
+        line-height: (35rem / $piece);
+    }
+
+    h3 {
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        bottom: (13rem / $piece);
+        padding: 0 (13rem / $piece) 0;
+        font-size: (22rem / $piece);
+        font-family: inherit;
+        color: #eeeeee;
+        font-weight: bold;
+        text-shadow: 0px 0px 4px #110f1a;
+    }
+
+    h4 {
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        bottom: (5rem / $piece);
+        padding: 0 (13rem / $piece) 0;
+        font-size: (17rem / $piece);
+        font-weight: bold;
+        font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+        color: #eeeeee;
+        text-shadow: 0px 0px 4px #110f1a;
+    }
+}
+
+.main-content:nth-child(1) {
+    background-image: url(../upload/game/game_1.jpg);
+    box-shadow: 0px -26px 22px -9px #110f1a inset;
+}
+
+.main-content:nth-child(2) {
+    background-image: url(../upload/game/game_2.jpg);
+    box-shadow: 0px -26px 22px -9px #777777 inset;
+}
+
+.main-content:nth-child(3) {
+    background-image: url(../upload/game/game_3.jpg);
+    box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+
+.main-content:nth-child(4) {
+    background-image: url(../upload/game/game_4.jpg);
+    box-shadow: 0px -26px 22px -9px #585510 inset;
+}
+
+.main-content:nth-child(5) {
+    background-image: url(../upload/game/game_5.jpg);
+    box-shadow: 0px -26px 22px -9px #41100f inset;
+}
+
+.main-content:nth-child(6) {
+    background-image: url(../upload/game/game_6.jpg);
+    box-shadow: 0px -26px 22px -9px #383c21 inset;
+}
+
+.main-content:nth-child(7) {
+    background-image: url(../upload/game/add_game.jpg);
+}
+
+.main-content:nth-child(8) {
+    background-image: url(../upload/game/find_game.jpg);
+}
+
+
+.main-content:nth-child(9) {
+    background-image: url(../upload/game/game_7.jpg);
+    box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+
+.main-content:nth-child(10) {
+    background-image: url(../upload/game/game_8.jpg);
+    box-shadow: 0px -26px 22px -9px #1d2930 inset;
+}
+
+
+/*  热门导航  */
+.talk-nav {
+    float: left;
+    width: 100%;
+    height: (43rem / $piece);
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0;
+
+    li {
+        float: left;
+        height: (42rem / $piece);
+        padding: 0 (17rem / $piece);
+        color: #444;
+        font-size: (16rem / $piece);
+        font-weight: 600;
+        line-height: (42rem / $piece);
+    }
+
+    li:nth-child(1) {
+        border-bottom: 2px solid #0088cc;
+    }
+}
+
+
+.host-game-list {
+    float: left;
+    width: 100%;
+    height: (445rem / $piece);
+    padding-top: (20rem / $piece);
+}
+
+.host-game {
+    float: left;
+    width: (170rem / $piece);
+    height: (145rem / $piece);
+    padding: 0 (14rem / $piece);
+
+    .game-image {
+        width: (140rem / $piece);
+        height: (80rem / $piece);
+        margin: (15rem / $piece) 0 (12rem / $piece);
+
+        img {
+            width: (140rem / $piece);
+            height: (80rem / $piece);
+        }
+    }
+
+    h4 {
+        width: 100%;
+        margin: 0;
+        font-size: (14rem / $piece);
+        font-family: inherit;
+        font-weight: bold;
+        color: #444;
+    }
+}
+
+
+.recently-title {
+    float: left;
+    width: 100%;
+    height: (91rem / $piece);
+    background-color: #eeeeee;
+    padding: (21rem / $piece) 0;
+    margin: (32rem / $piece) 0;
+
+    .recently-container {
+        width: 100%;
+        height: 100%;
+        padding: 0 (28rem / $piece);
+
+
+        h2 {
+            float: left;
+            color: #444;
+            font-size: (20rem / $piece);
+            font-weight: bold;
+            padding-top: (15rem / $piece);
+            margin: 0;
+        }
+
+        div {
+            float: right;
+            width: (103rem / $piece);
+            height: (37rem / $piece);
+            margin: (6rem / $piece);
+            padding: 0 (23rem / $piece);
+            background-color: #f9f9f9;
+            font-size: (14rem / $piece);
+            line-height: (37rem / $piece);
+            font-weight: bold;
+            color: #444;
+        }
+    }
+}
+
+.recently-game-list{
+    float: left;
+    width: 100%;
+}
+
+
+.recently-game-content{
+    float: left;
+    width: 100%;
+    height: (280rem / $piece);
+
+    img{
+        width: 100%;
+        height: (185rem / $piece);
+    }
+
+    h3{
+        margin: 0;
+        width: 100%;
+        height: (37rem / $piece);
+        padding: (6rem / $piece) (11rem / $piece);
+        box-sizing: border-box;
+        font-size: (18rem / $piece);
+        color: #444;
+        font-weight: bold;
+        background-color: #ffffff;
+    }
+
+    span{
+        display: block;
+        width: 100%;
+        height: (37rem / $piece);
+        padding: 0 (11rem / $piece) (6rem / $piece);
+        color: #808080;
+        background-color: #ffffff;
+    }
+}
+
+
+.see-more{
+    float: left;
+    width: 100%;
+    width: 100%;
+    height: (230rem / $piece);
+    padding: (100rem / $piece);
+    text-align: center;
+    line-height: (30rem / $piece);
+}
+
+
+
+
+
+/*  尾部  */
+footer {
+    float: left;
+    width: 100%;
+    background-color: #333333;
+    border-top: 5px solid #292929;
+
+    .container {
+        padding: 0 (28rem / $piece);
+    }
+}
+
+.content {
+    width: 100%;
+    height: (1550rem / $piece);
+    padding: (83rem / $piece) 0;
+
+    .footer-logo {
+        width: (134rem / $piece);
+        height: (54rem / $piece);
+        margin-bottom: (33rem / $piece);
+    }
+}
+
+.footer-nav {
+    color: #a6a6a6;
+    font-size: (15rem / $piece);
+    margin-bottom: (33rem / $piece);
+}
+
+.link-icon {
+    width: 100%;
+    height: (38rem / $piece);
+
+    i {
+        float: left;
+        display: block;
+        width: (32rem / $piece);
+        height: (32rem / $piece);
+        border-radius: 50%;
+        color: #dddddd;
+        text-align: center;
+        line-height: (32rem / $piece);
+        border: 1px solid #b5b5b5;
+        margin-right: (5rem / $piece);
+    }
+}
+
+
+.serverId {
+    width: 100%;
+    height: (44rem / $piece);
+    margin-bottom: (40rem / $piece);
+    color: #777777;
+    line-height: (62rem / $piece);
+    font-size: (13rem / $piece);
+}
+
+
+.attentionUs {
+    float: left;
+    width: 100%;
+    height: (25rem / $piece);
+    color: #dddddd;
+    font-size: (17rem / $piece);
+    letter-spacing: 2;
+    font-weight: bold;
+    margin-bottom: (28rem / $piece);
+    font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+}
+
+
+.qr-code {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: (150rem / $piece);
+    text-align: center;
+    margin-bottom: (43rem / $piece);
+
+    img {
+        width: (118rem / $piece);
+        height: (118rem / $piece);
+        padding: (11rem / $piece);
+    }
+
+    span {
+        position: absolute;
+        bottom: 5%;
+        left: 28%;
+        display: inline-block;
+        font-size: (13rem / $piece);
+        color: #a2a2a2;
+        font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
+
+    }
+}
+
+
+.footer-nav-content {
+    float: left;
+    width: 100%;
+    height: (235rem / $piece);
+    margin-bottom: (60rem / $piece);
+
+
+    li {
+        height: (30rem / $piece);
+        padding: (5rem / $piece);
+        background-image: url(../img/widget-link-dark@2x.png);
+        background-repeat: no-repeat;
+        font-size: (16rem / $piece);
+        color: #cccccc;
+        line-height: (34rem / $piece);
+    }
+}
+
+
+.call-we {
+    float: left;
+    width: 100%;
+    height: (42rem / $piece);
+    margin-bottom: (33rem / $piece);
+    color: #adadad;
+}
+
+
+.username {
+    float: left;
+    width: 100%;
+    height: (37rem / $piece);
+    margin-bottom: (12rem / $piece);
+
+    span {
+        float: left;
+        padding: (10rem / $piece) (12rem / $piece);
+        font-size: (16rem / $piece);
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-color: #212121;
+
+        i {
+            color: #999999;
+            font-size: (16rem / $piece);
+        }
+    }
+
+    input {
+        float: left;
+        width: 88%;
+        height: (37rem / $piece);
+        padding: (6rem / $piece) (12rem / $piece);
+        color: #999;
+        background-color: rgba(0, 0, 0, .2);
+        border: 1px solid #1e1e1e;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+
+
+.email {
+    float: left;
+    width: 100%;
+    height: (37rem / $piece);
+    margin-bottom: (12rem / $piece);
+
+    span {
+        float: left;
+        padding: (10rem / $piece) (12rem / $piece);
+        font-size: (16rem / $piece);
+        font-weight: 400;
+        line-height: 1;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-color: #212121;
+
+        i {
+            color: #999999;
+            font-size: (16rem / $piece);
+        }
+    }
+
+    input {
+        float: left;
+        width: 88%;
+        height: (37rem / $piece);
+        padding: (6rem / $piece) (12rem / $piece);
+        color: #999;
+        background-color: #292929;
+        border: 1px solid #1e1e1e;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
+
+.message {
+    display: block;
+    width: 100%;
+    height: (87rem / $piece);
+    padding: (6rem / $piece) (12rem / $piece);
+    margin-bottom: (12rem / $piece);
+    box-sizing: border-box;
+    border: 1px solid #1e1e1e;
+    color: #999;
+    background-color: #292929;
+    border-radius: 4px;
+}
+
+
+.sent-message {
+    float: left;
+    width: (88rem / $piece);
+    height: (37rem / $piece);
+    padding: (6rem / $piece) (6rem / $piece);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    font-size: (16rem / $piece);
+    text-align: center;
+    line-height: (22rem / $piece);
+    letter-spacing: normal;
+    word-spacing: normal;
+
+}
+
+
+/* 版权 */
+.footer-copyright {
+    float: left;
+    width: 100%;
+    background-color: #292929;
+
+    .container {
+        padding: 0 (28rem / $piece);
+        
+
+        p{
+            width: 100%;
+            margin-bottom: (12rem / $piece);
+            text-align: center;
+            color: #5e5e5e;
+            font-size: (15rem / $piece);
+        }
+
+        small{
+            font-size: (13rem / $piece);
+            color: #5e5e5e;
+            text-align: center;
+        }
+    }
+}
+
+.copyright-content{
+    width: 100%;
+    height: (260rem / $piece);
+    padding-top: (45rem / $piece);
+}
+
+.copyright-menu{
+    width: 100%;
+    height: (27rem / $piece);
+    margin-bottom: (12rem / $piece);
+    color: #5e5e5e;
+
+    a{
+        font-size: (16rem / $piece);
+        color: #5e5e5e;
+    }
+}
+

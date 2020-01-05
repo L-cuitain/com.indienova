@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>独立游戏资讯 | indienova 独立游戏</title>
+</head>
+<!-- 引入 标题图标 -->
+<link rel="icon" href="./favicon.ico">
+
+<!-- 引入 清除样式文件 -->
+<link rel="stylesheet" href="./lib/reset/reset.css">
+
+
+<!-- 引入bootstrap插件 -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<!-- 引入轮播图css插件 -->
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+<!-- 引入css样式 -->
+<link rel="stylesheet" href="./css/font.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./scss/article.css">
+
+<!-- 引入轮播图js插件 -->
+<script src="./js/swiper.min.js"></script>
+
+<!-- 引入jquery -->
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+<!-- 引入js -->
+<script type="text/javascript" src="./js/article.js"></script>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header-left">
+            <i class="icon-cn-indienova"></i>
+        </div>
+
+        <div class="header-center">
+            <i class="icon-line2-user"></i>
+            <a href="#">登录</a>
+            <span>/</span>
+            <a href="#">注册</a>
+        </div>
+
+        <div class="header-right">
+            <li class="header-right-content" id="btn_language">
+                <img src="./img/gb.svg" alt="">
+                <span>En</span>
+                <i class="icon-angle-down"></i>
+
+                <ul class="content-language" id="btn_change">
+                    <li class="EN">
+                        <img src="./img/gb.svg" alt="">
+                        <span>English</span>
+                    </li>
+                    <li class="CN">
+                        <img src="./img/cn.svg" alt="">
+                        <span>简体中文</span>
+                    </li>
+                </ul>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-left" id="nav-getlist">
+            <i class="icon-reorder"></i>
+        </div>
+
+        <div class="nav-center">
+            <a href="./index.html"><img src="./img/logo/indienova_new.png" alt=""></a>
+        </div>
+
+        <div class="nav-right">
+            <i class="icon-search3"></i>
+        </div>
+
+        <ul class="nav-list" id="nav-showlist">
+            <li><a href="./article.html">文章</a><i>&gt;</i></li>
+            <li><a href="./subject.html">专题</a><i>&gt;</i></li>
+            <li><a href="./develop.html">开发</a><i>&gt;</i></i></li>
+            <li><a href="./game.html">游戏</a><i>&gt;</i></li>
+        </ul>
+
+    </nav>
+
+    <!-- 灰色导航条 -->
+    <div class="nav-gray">
+        <div class="nav-gray-button" id="nav-gray-getlist">
+            <i class="icon-reorder"></i>
+        </div>
+
+        <ul class="nav-gray-click" id="nav-gray-list">
+            <li><a href="#">全部</a><i></i></li>
+            <li><a href="#">资讯</a><i></i></li>
+            <li><a href="#">前瞻</a><i></i></i></li>
+            <li><a href="#">评测</a><i></i></li>
+            <li><a href="#">漫谈</a><i></i></li>
+        </ul>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/article_carousel_1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/article_carousel_2.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/article_carousel_3.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/article_carousel_4.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/article_carousel_5.jpg);"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+
+
+
+
+    <!-- 主体 -->
+    <main>
+        <div class="main-container">
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_1.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>2</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>1</span>
+                    </div>
+                </div>
+                <h3>周末游戏视频锦集 #29</h3>
+                <p>周末了，看看游戏宣传片吧。周末游戏视频集锦 #29。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_2.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>4</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>3</span>
+                    </div>
+                </div>
+                <h3>② ⓪ ② ⓪｜Supply Issue.25</h3>
+                <p>近期值得推荐用来打发周末时间的内容不算多，就连游戏也很少。不过作为游戏玩家，最近有一部剧集恐怕你是不能错过的。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_3.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>6</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>3</span>
+                    </div>
+                </div>
+                <h3>Steam 大奖 2019 揭晓</h3>
+                <p>折扣季接近尾声，Steam 2019 大奖也终于揭晓。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_4.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>14</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>探索者 2020-01-02</h3>
+                <p>“探索者”是一个新的系列，在这里集中一些短小精悍的游戏圈内的相关信息，比如最新的游戏录屏、图片、文章等有值得了解和参考价值的内容。内容来源目前主要是海外社交媒体和海外游戏媒体。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_5.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>5</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>6</span>
+                    </div>
+                </div>
+                <h3>深度迷思 ｜ 死亡搁浅</h3>
+                <p>Alone we have no future</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_6.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>7</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+                <h3>周末游戏视频集锦 #28</h3>
+                <p>周末了，看看游戏宣传片吧。周末游戏视频集锦 #28。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_7.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>6</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+                <h3>山顶洞人 #7 周轶君：在别人的街头</h3>
+                <p>每次去见轶君都有新的收获，今年她的纪录片《他乡的童年》一鸣惊人，这样的成绩自然来源于绝妙的选题，但又不只那么简单……</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_4.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>13</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>1</span>
+                    </div>
+                </div>
+                <h3>探索者 2019-12-26</h3>
+                <p>探索者”是一个正在尝试中的系列，准备在这里集中一些短小精悍的游戏圈内的相关信息，比如最新的游戏录屏、图片、文章等有值得了解和参考价值的内容。内容来源目前主要是海外社交媒体和海外游戏媒体。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_8.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>9</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>【中字/纪录片】独立游戏工作室巡礼 DevQuest E01~E04 全集</h3>
+                <p>由微软制作的关于多款独立游戏及独立游戏生态的纪录片（全 4 集）。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_9.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>6</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>诺娃速递：锈湖新作就快来了</h3>
+                <p>The White Door
+                    是方块逃脱和锈湖系列游戏的开发团队新游戏，是指向与点击式冒险游戏。但是这一次，画风变成了相当简约的黑白线条画，仅在特殊需要的地方辅以淡淡的色彩，这使得新游戏有了一种独特的味道。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_10.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>8</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>1</span>
+                    </div>
+                </div>
+                <h3>本周 Steam 值得关注的游戏 12.23 - 01.05</h3>
+                <p>近期各种年底折扣，大家纷纷让路，所以值得关注的作品数量很少。这一次，我们是集合了接下来两周内的游戏，但数量上也还是比较惨淡。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/article/article_11.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>8</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>帮你挑：Steam 2019 冬季特卖 第一波</h3>
+                <p>Steam 2019 冬季特卖已经开始，有超过三万四千款游戏在打折。这一波推荐的是打折后是历史最低，而且五折以上，且玩法独特的独立游戏，均发行于 2019 年。</p>
+            </div>
+
+
+            <!-- 页数 -->
+            <nav class="text-center">
+                <ul class="pagination">
+
+                    <li class="disabled"><a href="javascript:void(0);">«</a></li>
+
+
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+
+                    <li><a href="#">»</a></li>
+
+                </ul>
+            </nav>
+
+
+            <div class="join">
+                <div class="join-content">
+                    <h3>加入 indienova</h3>
+                    <ul class="join-list">
+                        <li>
+                            <i class="icon-user"></i>
+                            建立个人／工作室档案
+                        </li>
+                        <li>
+                            <i class="icon-file"></i>
+                            建立开发中的游戏档案
+                        </li>
+                        <li>
+                            <i class="icon-eye-open"></i>
+                            关注个人／工作室动态
+                        </li>
+                        <li>
+                            <i class="icon-users"></i>
+                            寻找合作伙伴共同开发
+                        </li>
+                        <li>
+                            <i class="icon-truck2"></i>
+                            寻求线上发行
+                        </li>
+                        <li>
+                            <i class="icon-asterisk"></i>
+                            更多服务……
+                        </li>
+                    </ul>
+
+                    <div class="login-regeister">
+                        <span>登录 / 注册</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 最多讨论 -->
+            <div class="most-talk">
+
+                <!-- 讨论导航 -->
+                <ul class="talk-nav">
+                     <li id="praise">最多赞</li>
+                     <li id="comment">最多评论</li>
+                </ul>
+
+                <div class="talk-content">
+                    <a href="#">indienova 换了一个新 Logo</a>
+                    <a href="#">indienova 2016 大事记</a>
+                    <a href="#">写在卸载《阴阳师》之前</a>
+                    <a href="#">ABZÛ：沁人心脾的水下之旅</a>
+                    <a href="#">游戏中你还会做一个好人吗？</a>
+                    <a href="#">除了休闲娱乐，游戏还能带给玩家什么？</a>
+                    <a href="#">关于游戏设计专业院校，你所不知道的 #1: ...</a>
+                    <a href="#">Outside the Inside : 新作 Inside 通关感受...</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+        <!-- 尾部 -->
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <div class="footer-logo">
+                        <img src="./img/logo/indienova_footer_new.png" alt="">
+                    </div>
+    
+                    <p class="footer-nav">由喜爱<strong>独立游戏</strong>，追求游戏乐趣的我们建立于 <strong>2013</strong> 年。</p>
+    
+                    <div class="link-icon">
+                        <i class="icon-cn-weibo"></i>
+                        <i class="icon-cn-wechat"></i>
+                        <i class="icon-cn-qq"></i>
+                        <i class="icon-cn-zhihu"></i>
+                    </div>
+    
+                    <div class="link-icon">
+                        <i class="icon-steam"></i>
+                        <i class="icon-facebook"></i>
+                        <i class="icon-twitter"></i>
+                        <i class="icon-github"></i>
+                    </div>
+    
+    
+                    <div class="serverId">
+                        ServerID: NOVA-L1
+                    </div>
+    
+                    <h4 class="attentionUs">
+                        关注我们
+                    </h4>
+    
+    
+                    <div class="qr-code">
+                        <img src="./img/QR_footer.png" alt="">
+                        <span>扫描二维码关注微信公众号</span>
+                    </div>
+    
+                    <h4 class="attentionUs">
+                        容易错过的内容
+                    </h4>
+    
+                    <ul class="footer-nav-content">
+                        <li>
+                            &nbsp;&nbsp;&nbsp;会员开发的游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏开发资源大全
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;推荐的 Steam 游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;必买的 Steam 游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;会员日志／DevLog
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏开发素材
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏古登堡计划
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;向 indienova 投稿
+                        </li>
+                    </ul>
+    
+    
+                    <h4 class="attentionUs">
+                        快速联系我们
+                    </h4>
+    
+                    <p class="call-we">您可以<strong>注册／登录</strong>后再发送信息，以便我们直接通过站内私信快速联系您。</p>
+    
+                    <div class="username">
+                        <span><i class="icon-user"></i></span>
+                        <input type="text" class="username-input" value="" placeholder="您的名字">
+                    </div>
+    
+                    <div class="email">
+                        <span><i class="icon-email3"></i></span>
+                        <input type="text" class="email-input" value="" placeholder="邮件地址">
+                    </div>
+    
+                    <textarea class="message" placeholder="信息"></textarea>
+    
+                    <button class="sent-message">发送信息</button>
+    
+                </div>
+            </div>
+    
+        </footer>
+    
+        <!-- 版权 -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright-content">
+                    <div class="copyright-menu">
+                        <a href="#">隐私声明</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">常见问题</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">关于我们</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">联系我们</a>
+                    </div>
+    
+                    <p>
+                    <small>京 ICP 备 16052096 号<br>增值电信业务经营许可证：京 B2-20160196</small>
+                    </p>
+    
+                    <p class="nobottommargin">烽火连城（北京）科技有限公司</p>
+    
+                    <p class="nobottommargin">版权所有 © 2013,2019 indienova.com 保留所有权利</p>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

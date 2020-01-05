@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>独立游戏资讯 | indienova 独立游戏</title>
+</head>
+<!-- 引入 标题图标 -->
+<link rel="icon" href="./favicon.ico">
+
+<!-- 引入 清除样式文件 -->
+<link rel="stylesheet" href="./lib/reset/reset.css">
+
+
+<!-- 引入bootstrap插件 -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<!-- 引入轮播图css插件 -->
+<link rel="stylesheet" href="./css/swiper.min.css">
+
+<!-- 引入css样式 -->
+<link rel="stylesheet" href="./css/font.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./scss/article.css">
+
+<!-- 引入轮播图js插件 -->
+<script src="./js/swiper.min.js"></script>
+
+<!-- 引入jquery -->
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+<!-- 引入js -->
+<script type="text/javascript" src="./js/article.js"></script>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header-left">
+            <i class="icon-cn-indienova"></i>
+        </div>
+
+        <div class="header-center">
+            <i class="icon-line2-user"></i>
+            <a href="#">登录</a>
+            <span>/</span>
+            <a href="#">注册</a>
+        </div>
+
+        <div class="header-right">
+            <li class="header-right-content" id="btn_language">
+                <img src="./img/gb.svg" alt="">
+                <span>En</span>
+                <i class="icon-angle-down"></i>
+
+                <ul class="content-language" id="btn_change">
+                    <li class="EN">
+                        <img src="./img/gb.svg" alt="">
+                        <span>English</span>
+                    </li>
+                    <li class="CN">
+                        <img src="./img/cn.svg" alt="">
+                        <span>简体中文</span>
+                    </li>
+                </ul>
+        </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <div class="nav-left" id="nav-getlist">
+            <i class="icon-reorder"></i>
+        </div>
+
+        <div class="nav-center">
+            <a href="./index.html"><img src="./img/logo/indienova_new.png" alt=""></a>
+        </div>
+
+        <div class="nav-right">
+            <i class="icon-search3"></i>
+        </div>
+
+        <ul class="nav-list" id="nav-showlist">
+            <li><a href="./article.html">文章</a><i>&gt;</i></li>
+            <li><a href="./subject.html">专题</a><i>&gt;</i></li>
+            <li><a href="./develop.html">开发</a><i>&gt;</i></i></li>
+            <li><a href="./game.html">游戏</a><i>&gt;</i></li>
+        </ul>
+
+    </nav>
+
+    <!-- 灰色导航条 -->
+    <div class="nav-gray">
+        <div class="nav-gray-button" id="nav-gray-getlist">
+            <i class="icon-reorder"></i>
+        </div>
+
+        <ul class="nav-gray-click" id="nav-gray-list">
+            <li><a href="#">全部</a><i></i></li>
+            <li><a href="#">引擎</a><i></i></li>
+            <li><a href="#">设计</a><i></i></i></li>
+            <li><a href="#">编程</a><i></i></li>
+            <li><a href="#">工具</a><i></i></li>
+            <li><a href="#">资源</a><i></i></li>
+        </ul>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/develop_carousel_1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/develop_carousel_2.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/develop_carousel_3.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/develop_carousel_4.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(./upload/carousel/develop_carousel_5.jpg);"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+
+
+
+
+    <!-- 主体 -->
+    <main>
+        <div class="main-container">
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_1.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>2</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>1</span>
+                    </div>
+                </div>
+                <h3>一姐小课堂第 8 - 10 课</h3>
+                <p>王妙一工作室的关于如何制作独立游戏的系列视频教程。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_2.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>1</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>UE4 实时虚拟角色材质篇之 Skin Material（二）面部动画贴图融合</h3>
+                <p>在真正 3A 级游戏或者是影视的制作过程中。不论是过场动画还是影视镜头都会有人物对话的部分。所以面部都会产生相应的表情。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_3.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>3</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>【风农视频】Unity 2D 新功能盘点，从 2017 到 2019</h3>
+                <p>盘点从 2017 到 2019 年，unity 发布的 2D 新功能。内容取自 unity 宣传视频，Brackeys，以及 Blackthornprod 的一些教程。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_4.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>5</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>【GDC 中字】《杀戮尖塔》中的度量数据驱动型设计和平衡</h3>
+                <p>在 GDC2019 的本次讲演中，Mega Crit Games 的创始人之一 Anthony Giovannetti 将会说明其团队是如何对《杀戮尖塔》进行平衡的。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_5.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>9</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>【旧译】游戏学研究，第一年</h3>
+                <p>埃斯本・阿瑟斯（Espen Aarseth），哥本哈根大学人文信息学副教授，2001 年创办《游戏学研究》（game studies）并获北欧人文与社会科学研究理事会联合委员会认证。此篇为 2001 年阿瑟斯为《游戏学研究》创刊号所写的卷首。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_6.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>24</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+                <h3>游戏编程入门指南</h3>
+                <p>游戏代码也写了几年， 有时候在想如果现在给刚入行的自己一点建议也许能有一点帮助。所以这篇日志主要是分享一下自己对于游戏编程入门的一些想法。</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_7.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>1</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>Cocos Creator 3D 材质系统：曲面效果如何实现？</h3>
+                <p>本文将通过曲面效果案例带各位了解 Cocos Creator 3D 材质系统~</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_8.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>7</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>3</span>
+                    </div>
+                </div>
+                <h3>忍者印记关卡设计深度剖析 - 第一关：墨汁与梦境</h3>
+                <p>作为一款经典且优秀的平台潜行游戏，忍者印记中的关卡设计非常值得开发者们学习，笔者通过对这款游戏第一关关卡结构进行剖析和大家一起学习高质量关卡的设计思路和技巧</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_9.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>5</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>UE4 实时虚拟角色材质篇之 Skin Material（一）</h3>
+                <p>对于数字的人制作，文章中主要谈及材质部分。而对于更多的制作细节会提出来具体的制作思路和使用的设备。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_10.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>5</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                <h3>Unity 教程：背包系统（下）</h3>
+                <p>这是 Michael-Studio 制作的《Unity 教程：背包系统》系列视频，这里集合在一起供游戏爱好者学习和参考。</p>
+            </div>
+
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_11.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>9</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+                <h3>方块世界开发日志</h3>
+                <p>使用 Fantasy Console 开发游戏的思考与体会</p>
+            </div>
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="./upload/develop/develop_12.jpg" alt="">
+                    <div class="views-badge">
+                        <i class="icon-like"></i>
+                        <span>10</span>
+                        <i class="icon-comments-alt"></i>
+                        <span>2</span>
+                    </div>
+                </div>
+                <h3>Unity 使用技巧集合 #4</h3>
+                <p>Unity 使用技巧集合会整理和收集 Unity 开发相关的技巧和经验。</p>
+            </div>
+
+
+            <!-- 页数 -->
+            <nav class="text-center">
+                <ul class="pagination">
+
+                    <li class="disabled"><a href="javascript:void(0);">«</a></li>
+
+
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+
+                    <li><a href="#">»</a></li>
+
+                </ul>
+            </nav>
+
+
+            <div class="join">
+                <div class="join-content">
+                    <h3>加入 indienova</h3>
+                    <ul class="join-list">
+                        <li>
+                            <i class="icon-user"></i>
+                            建立个人／工作室档案
+                        </li>
+                        <li>
+                            <i class="icon-file"></i>
+                            建立开发中的游戏档案
+                        </li>
+                        <li>
+                            <i class="icon-eye-open"></i>
+                            关注个人／工作室动态
+                        </li>
+                        <li>
+                            <i class="icon-users"></i>
+                            寻找合作伙伴共同开发
+                        </li>
+                        <li>
+                            <i class="icon-truck2"></i>
+                            寻求线上发行
+                        </li>
+                        <li>
+                            <i class="icon-asterisk"></i>
+                            更多服务……
+                        </li>
+                    </ul>
+
+                    <div class="login-regeister">
+                        <span>登录 / 注册</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 最多讨论 -->
+            <div class="most-talk">
+
+                <!-- 讨论导航 -->
+                <ul class="talk-nav">
+                     <li id="praise">最多赞</li>
+                     <li id="comment">最多评论</li>
+                </ul>
+
+                <div class="talk-content">
+                    <a href="#">Scroll Back：2D 横版游戏摄像机运镜原理...</a>
+                    <a href="#">房间和迷宫：一个地牢生成算法</a>
+                    <a href="#">写给程序员的美术创作指南</a>
+                    <a href="#">基于 Tile 地图的视觉范围生成方法以及实现</a>
+                    <a href="#">像素课堂#1：什么是像素画</a>
+                    <a href="#">视线和光线：如何创建 2D 视觉范围效果</a>
+                    <a href="#">视线和光线：如何创建 2D 视觉范围效果</a>
+                    <a href="#">2D 的动态光影 - Sprite Lamp</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+        <!-- 尾部 -->
+        <footer>
+            <div class="container">
+                <div class="content">
+                    <div class="footer-logo">
+                        <img src="./img/logo/indienova_footer_new.png" alt="">
+                    </div>
+    
+                    <p class="footer-nav">由喜爱<strong>独立游戏</strong>，追求游戏乐趣的我们建立于 <strong>2013</strong> 年。</p>
+    
+                    <div class="link-icon">
+                        <i class="icon-cn-weibo"></i>
+                        <i class="icon-cn-wechat"></i>
+                        <i class="icon-cn-qq"></i>
+                        <i class="icon-cn-zhihu"></i>
+                    </div>
+    
+                    <div class="link-icon">
+                        <i class="icon-steam"></i>
+                        <i class="icon-facebook"></i>
+                        <i class="icon-twitter"></i>
+                        <i class="icon-github"></i>
+                    </div>
+    
+    
+                    <div class="serverId">
+                        ServerID: NOVA-L1
+                    </div>
+    
+                    <h4 class="attentionUs">
+                        关注我们
+                    </h4>
+    
+    
+                    <div class="qr-code">
+                        <img src="./img/QR_footer.png" alt="">
+                        <span>扫描二维码关注微信公众号</span>
+                    </div>
+    
+                    <h4 class="attentionUs">
+                        容易错过的内容
+                    </h4>
+    
+                    <ul class="footer-nav-content">
+                        <li>
+                            &nbsp;&nbsp;&nbsp;会员开发的游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏开发资源大全
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;推荐的 Steam 游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;必买的 Steam 游戏
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;会员日志／DevLog
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏开发素材
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;游戏古登堡计划
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;向 indienova 投稿
+                        </li>
+                    </ul>
+    
+    
+                    <h4 class="attentionUs">
+                        快速联系我们
+                    </h4>
+    
+                    <p class="call-we">您可以<strong>注册／登录</strong>后再发送信息，以便我们直接通过站内私信快速联系您。</p>
+    
+                    <div class="username">
+                        <span><i class="icon-user"></i></span>
+                        <input type="text" class="username-input" value="" placeholder="您的名字">
+                    </div>
+    
+                    <div class="email">
+                        <span><i class="icon-email3"></i></span>
+                        <input type="text" class="email-input" value="" placeholder="邮件地址">
+                    </div>
+    
+                    <textarea class="message" placeholder="信息"></textarea>
+    
+                    <button class="sent-message">发送信息</button>
+    
+                </div>
+            </div>
+    
+        </footer>
+    
+        <!-- 版权 -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright-content">
+                    <div class="copyright-menu">
+                        <a href="#">隐私声明</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">常见问题</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">关于我们</a>
+                        &nbsp;/ &nbsp;
+                        <a href="#">联系我们</a>
+                    </div>
+    
+                    <p>
+                    <small>京 ICP 备 16052096 号<br>增值电信业务经营许可证：京 B2-20160196</small>
+                    </p>
+    
+                    <p class="nobottommargin">烽火连城（北京）科技有限公司</p>
+    
+                    <p class="nobottommargin">版权所有 © 2013,2019 indienova.com 保留所有权利</p>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
