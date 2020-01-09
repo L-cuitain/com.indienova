@@ -26,7 +26,7 @@ $(function () {
             //否则 列表隐藏
             $("#nav-showlist").css("display", "none");
             $("nav").css("height","2.75rem");
-            $(".nav-gray-click").css("top","20%");
+            $(".nav-gray-click").css("top","20.6%");
         }
     })
 

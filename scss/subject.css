@@ -158,7 +158,7 @@ nav {
   z-index: 1;
 }
 
-.nav-center img {
+.nav-center a img {
   width: 7.25rem;
   height: 2.5rem;
 }
