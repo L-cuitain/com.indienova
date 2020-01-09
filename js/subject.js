@@ -68,14 +68,14 @@ $(function () {
 
       $(".icon-search3").click(function(){
         $(".icon-line-cross").fadeIn(500);
-        $(".form-control").fadeIn(500);
+        $(".search").fadeIn(500);
         $(".icon-search3").fadeOut(500);
         $(".nav-left").fadeOut(500);
         $(".nav-center").fadeOut(500);
       })
       $(".icon-line-cross").click(function(){
           $(".icon-line-cross").fadeOut(500);
-          $(".form-control").fadeOut(500);
+          $(".search").fadeOut(500);
           $(".icon-search3").fadeIn(500);
           $(".nav-left").fadeIn(500);
           $(".nav-center").fadeIn(500);

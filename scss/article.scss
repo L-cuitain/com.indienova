@@ -191,25 +191,25 @@ nav {
     .icon-line-cross{
         display: none;
     }
-    .form-control {
-            display: none;
-            position: absolute;
-            left: 0;
-            top: 0;
-            padding: (12rem / $piece) (83rem / $piece) (12rem / $piece) 0;
-            width: (305rem / $piece);
-            height: (50rem / $piece);
-            background-color: transparent;
-            color: #333;
-            font-weight: 700;
-            margin-top: 0 !important;
-            font-family: Raleway, sans-serif;
-            letter-spacing: 2px;
-            font-size: 20px;
-            margin-left: (17rem / $piece);
-            box-sizing: border-box;
-            border: 0px;
-        }
+    .search {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: (12rem / $piece) (80rem / $piece) (12rem / $piece) 0;
+        width: (335rem / $piece);
+        height: (55rem / $piece);
+        background-color: transparent;
+        color: #333;
+        font-weight: 700;
+        margin-top: 0 !important;
+        font-family: Raleway, sans-serif;
+        letter-spacing: 2px;
+        font-size: 20px;
+        margin-left: (17rem / $piece);
+        box-sizing: border-box;
+        border: 0px;
+    }
 
 }
 

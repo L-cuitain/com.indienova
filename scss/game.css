@@ -177,14 +177,14 @@ nav {
   display: none;
 }
 
-.nav-right .form-control {
+.nav-right .search {
   display: none;
   position: absolute;
   left: 0;
   top: 0;
-  padding: 0.6rem 4.15rem 0.6rem 0;
-  width: 15.25rem;
-  height: 2.5rem;
+  padding: 0.6rem 4rem 0.6rem 0;
+  width: 16.75rem;
+  height: 2.75rem;
   background-color: transparent;
   color: #333;
   font-weight: 700;

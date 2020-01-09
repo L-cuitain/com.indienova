@@ -192,14 +192,14 @@ nav {
         display: none;
     }
 
-    .form-control {
+    .search {
         display: none;
         position: absolute;
         left: 0;
         top: 0;
-        padding: (12rem / $piece) (83rem / $piece) (12rem / $piece) 0;
-        width: (305rem / $piece);
-        height: (50rem / $piece);
+        padding: (12rem / $piece) (80rem / $piece) (12rem / $piece) 0;
+        width: (335rem / $piece);
+        height: (55rem / $piece);
         background-color: transparent;
         color: #333;
         font-weight: 700;
