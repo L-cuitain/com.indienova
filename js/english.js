@@ -32,4 +32,14 @@ $(function () {
       effect : 'coverflow',
       centeredSlides: true,
     })
+
+
+    $('.login-click').click(function() {
+        $('.login-form-mask').fadeIn(100);
+        $('.login').slideDown(200);
+    })
+        $('.close').click(function() {
+        $('.login-form-mask').fadeOut(100);
+        $('.login').slideUp(200);
+    })
 })

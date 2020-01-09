@@ -84,4 +84,15 @@ $(function () {
           $(".nav-left").fadeIn(500);
           $(".nav-center").fadeIn(500);
     })
+
+
+
+    $('.login-click').click(function() {
+        $('.login-form-mask').fadeIn(100);
+        $('.login').slideDown(200);
+    })
+        $('.close').click(function() {
+        $('.login-form-mask').fadeOut(100);
+        $('.login').slideUp(200);
+})
 })

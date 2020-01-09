@@ -69,6 +69,247 @@ header {
   color: #666666;
 }
 
+/* 登录菜单 */
+.login {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  padding: 0 0.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  float: right;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0px;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: initial;
+  opacity: .65;
+  font-family: Arial, Baskerville, monospace;
+  color: #b9b9b9;
+}
+
+.login-content {
+  float: left;
+  width: 17.3rem;
+  height: 29rem;
+  background-color: #fff;
+  padding: 0.4rem 1.65rem 0.4rem 0.85rem;
+  margin: auto;
+  border-radius: 8px;
+  margin: 1.5rem 1rem 0;
+}
+
+.login-title {
+  width: 100%;
+  height: 3rem;
+  padding: 0.6rem 0 0.6rem 1.1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: #666;
+}
+
+.login-title i {
+  margin-left: -1rem;
+  margin-right: 0.25rem;
+}
+
+.login-container {
+  width: 100%;
+  height: 22.5rem;
+  padding-left: 1.1rem;
+  padding-bottom: 0.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-container .username {
+  float: left;
+  width: 100%;
+  height: 4.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.login-container .username label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+.login-container .login-input-username {
+  width: 100%;
+  height: 2rem;
+  padding: 0.35rem 0.65rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.password {
+  float: left;
+  width: 100%;
+  height: 4.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.password label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+}
+
+.password .login-password {
+  width: 100%;
+  height: 2rem;
+  padding: 0.35rem 0.65rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.verification-code {
+  float: left;
+  width: 100%;
+  height: 4.25rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.verification-code img {
+  width: 6.25rem;
+  height: 1.65rem;
+}
+
+.verification-code .login-code {
+  width: 100%;
+  height: 2rem;
+  padding: 0.35rem 0.65rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.checkbox {
+  float: left;
+  width: 100%;
+  height: 1.25rem;
+  margin: 0.6rem 0;
+}
+
+.checkbox label {
+  position: relative;
+  float: left;
+  display: block;
+  width: 4rem;
+  height: 1.1rem;
+  padding-left: 1.1rem;
+  font-size: 0.75rem;
+}
+
+.checkbox label #remember-me {
+  position: absolute;
+  bottom: 25%;
+  margin-left: -1.1rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  background-color: initial;
+  margin-right: 0.3rem;
+  border: 1px solid #b1b1b1;
+}
+
+.login-in {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.login-in button {
+  height: 1.8rem;
+  padding: 0 1.25rem;
+  background-color: #59BA41;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 0.5rem;
+  border: 0px;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 0.5rem;
+}
+
+.login-in a {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 0;
+  color: #0f8fcf;
+}
+
+.login-link-icon {
+  float: left;
+  width: 100%;
+  height: 1.9rem;
+  padding: 0 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login-link-icon i {
+  float: left;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #555555;
+  text-align: center;
+  line-height: 1.6rem;
+  border: 1px solid #bebebe;
+  margin-right: 0.25rem;
+}
+
+.register {
+  float: left;
+  width: 13.25rem;
+  height: 2.5rem;
+  padding: 0.6rem 0 0.6rem 1.1rem;
+  border-top: 1px solid #fcfcfc;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+  line-height: 1.35rem;
+}
+
+.register i {
+  margin-left: -1rem;
+  margin-right: 0.25rem;
+}
+
+/* 头部 右侧 */
 .header-right {
   float: left;
   line-height: 2.25rem;
