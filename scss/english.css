@@ -39,22 +39,28 @@ header {
 
 .header-left {
   float: left;
-  width: 33%;
+  width: 26%;
   height: 100%;
   border-right: 1px solid #eeeeee;
 }
 
-.header-left i {
+.header-left span {
   float: right;
-  line-height: 2.5rem;
-  color: #666666;
-  margin-right: 0.75rem;
-  font-size: 0.65rem;
+  display: block;
+  width: 3.5rem;
+  height: 2.25rem;
+  padding: 0 0.7rem;
+  line-height: 2.25rem;
+  text-align: center;
+  color: #666;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
 }
 
 .header-center {
   float: left;
-  width: 27%;
+  width: 36%;
   height: 100%;
   border-right: 1px solid #eeeeee;
   text-align: center;
@@ -64,7 +70,7 @@ header {
 
 .header-center a,
 .header-center span {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: bold;
   color: #666666;
 }
@@ -76,7 +82,7 @@ header {
 
 .header-right .header-right-content {
   position: relative;
-  width: 4.25rem;
+  width: 5.5rem;
   height: 2.25rem;
   border-bottom: 1px solid #eeeeee;
 }
@@ -236,266 +242,307 @@ nav {
   font-weight: bold;
 }
 
-/*  主体  */
 main {
   float: left;
   width: 100%;
-  padding: 0.9rem 0 5rem;
   background-color: #f4f4f4;
+  margin-bottom: 4.25rem;
 }
 
-main .main-container {
+main .container {
+  float: left;
+  width: 100%;
   height: 100%;
-  padding: 0 1.4rem;
+  padding: 0 0.6rem;
 }
 
-.main-content {
+/* 轮播图  */
+.swiper-container {
+  float: left;
+  width: 18.8rem;
+  height: 5rem;
+  margin: 0.75rem 0;
+}
+
+.swiper-container .swiper-wrapper {
   position: relative;
-  float: left;
   width: 100%;
-  height: 9.35rem;
-  background-size: 100% 100%;
-  margin-bottom: 1.15rem;
+  height: 5rem;
 }
 
-.main-content h2 {
-  position: absolute;
-  bottom: 25%;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  font-size: 1.3rem;
-  font-family: inherit;
-  color: #eeeeee;
-  font-weight: bold;
-  line-height: 1.75rem;
-}
-
-.main-content h3 {
-  position: absolute;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  bottom: 0.65rem;
-  padding: 0 0.65rem 0;
-  font-size: 1.1rem;
-  font-family: inherit;
-  color: #eeeeee;
-  font-weight: bold;
-  text-shadow: 0px 0px 4px #110f1a;
-}
-
-.main-content h4 {
-  position: absolute;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  bottom: 0.25rem;
-  padding: 0 0.65rem 0;
-  font-size: 0.85rem;
-  font-weight: bold;
-  font-family: PingFang SC, Lantinghei SC, OpenSans-Light, Arial, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif;
-  color: #eeeeee;
-  text-shadow: 0px 0px 4px #110f1a;
-}
-
-.main-content:nth-child(1) {
-  background-image: url(../upload/game_1.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #110f1a inset;
-          box-shadow: 0px -26px 22px -9px #110f1a inset;
-}
-
-.main-content:nth-child(2) {
-  background-image: url(../upload/game_2.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #777777 inset;
-          box-shadow: 0px -26px 22px -9px #777777 inset;
-}
-
-.main-content:nth-child(3) {
-  background-image: url(../upload/game_3.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
-          box-shadow: 0px -26px 22px -9px #1d2930 inset;
-}
-
-.main-content:nth-child(4) {
-  background-image: url(../upload/game_4.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #585510 inset;
-          box-shadow: 0px -26px 22px -9px #585510 inset;
-}
-
-.main-content:nth-child(5) {
-  background-image: url(../upload/game_5.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #41100f inset;
-          box-shadow: 0px -26px 22px -9px #41100f inset;
-}
-
-.main-content:nth-child(6) {
-  background-image: url(../upload/game_6.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #383c21 inset;
-          box-shadow: 0px -26px 22px -9px #383c21 inset;
-}
-
-.main-content:nth-child(7) {
-  background-image: url(../upload/add_game.jpg);
-}
-
-.main-content:nth-child(8) {
-  background-image: url(../upload/find_game.jpg);
-}
-
-.main-content:nth-child(9) {
-  background-image: url(../upload/game_7.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
-          box-shadow: 0px -26px 22px -9px #1d2930 inset;
-}
-
-.main-content:nth-child(10) {
-  background-image: url(../upload/game_8.jpg);
-  -webkit-box-shadow: 0px -26px 22px -9px #1d2930 inset;
-          box-shadow: 0px -26px 22px -9px #1d2930 inset;
-}
-
-/*  热门导航  */
-.talk-nav {
-  float: left;
-  width: 100%;
-  height: 2.15rem;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 0;
-}
-
-.talk-nav li {
-  float: left;
-  height: 2.1rem;
-  padding: 0 0.85rem;
-  color: #444;
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 2.1rem;
-}
-
-.talk-nav li:nth-child(1) {
-  border-bottom: 2px solid #0088cc;
-}
-
-.host-game-list {
-  float: left;
-  width: 100%;
-  height: 22.25rem;
-  padding-top: 1rem;
-}
-
-.host-game {
-  float: left;
-  width: 8.5rem;
-  height: 7.25rem;
-  padding: 0 0.7rem;
-}
-
-.host-game .game-image {
-  width: 7rem;
-  height: 4rem;
-  margin: 0.75rem 0 0.6rem;
-}
-
-.host-game .game-image img {
-  width: 7rem;
-  height: 4rem;
-}
-
-.host-game h4 {
-  width: 100%;
-  margin: 0;
-  font-size: 0.7rem;
-  font-family: inherit;
-  font-weight: bold;
-  color: #444;
-}
-
-.recently-title {
-  float: left;
-  width: 100%;
-  height: 4.55rem;
-  background-color: #eeeeee;
-  padding: 1.05rem 0;
-  margin: 1.6rem 0;
-}
-
-.recently-title .recently-container {
+.swiper-container .swiper-slide {
   width: 100%;
   height: 100%;
-  padding: 0 1.4rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.recently-title .recently-container h2 {
+.swiper-container .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.news {
   float: left;
-  color: #444;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 0.75rem;
+  width: 100%;
+  padding: 0 0.75rem;
+  background-color: #ebebeb;
+}
+
+.news h3 {
+  display: inline-block;
   margin: 0;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid #cccccc;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+  color: #494444;
+  font-weight: 400;
 }
 
-.recently-title .recently-container div {
-  float: right;
-  width: 5.15rem;
-  height: 1.85rem;
-  margin: 0.3rem;
-  padding: 0 1.15rem;
-  background-color: #f9f9f9;
-  font-size: 0.7rem;
-  line-height: 1.85rem;
-  font-weight: bold;
-  color: #444;
-}
-
-.recently-game-list {
+.news .home-article {
   float: left;
   width: 100%;
+  margin: 0.85rem 0 0.35rem;
+  background-color: #ffffff;
 }
 
-.recently-game-content {
-  float: left;
-  width: 100%;
-  height: 14rem;
-}
-
-.recently-game-content img {
+.news .home-article img {
   width: 100%;
   height: 9.25rem;
 }
 
-.recently-game-content h3 {
-  margin: 0;
+.article-intro {
   width: 100%;
-  height: 1.85rem;
-  padding: 0.3rem 0.55rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+}
+
+.article-intro h4 {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.65rem;
+  font-family: 'Bitter', sans-serif;
+  line-height: 1.25rem;
   color: #444;
   font-weight: bold;
-  background-color: #ffffff;
 }
 
-.recently-game-content span {
-  display: block;
+.article-intro p {
   width: 100%;
-  height: 1.85rem;
-  padding: 0 0.55rem 0.3rem;
-  color: #808080;
-  background-color: #ffffff;
+  margin: 0;
+  margin-bottom: 0.65rem;
+  line-height: 1.5rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
-.see-more {
+.article-intro p img {
+  float: left;
+  width: 1.1rem !important;
+  height: 1.1rem !important;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.article-intro p span {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+
+.news-bottom {
   float: left;
   width: 100%;
-  width: 100%;
-  height: 11.5rem;
-  padding: 5rem;
+  height: 3rem;
+  padding: 0.5rem 0.7rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: 600;
+  color: #AAA;
   text-align: center;
-  line-height: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 3rem;
+}
+
+.long {
+  width: 100%;
+  height: 0.1rem;
+}
+
+.game-byuser {
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 1.65rem;
+}
+
+.game-byuser h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid #cccccc;
+  margin: 0.5rem 0.8rem;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+  color: #494444;
+  font-weight: 400;
+}
+
+.game-byuser a {
+  font-family: 'Source Sans Pro',sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  background-color: #EEE;
+  color: #AAA;
+  padding: 0.5rem 0.7rem;
+  margin: 0 5.5rem 1rem;
+}
+
+.home-game {
+  float: left;
+  width: 9.25rem;
+  height: 8rem;
+  padding: 0 0.8rem;
+  margin-top: 0.85rem;
+}
+
+.home-game img {
+  width: 7.5rem;
+  height: 4.3rem;
+}
+
+.home-game h4 {
+  width: 100%;
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.8rem;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+
+.home-game p {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.members {
+  float: left;
+  width: 100%;
+  background-color: #e1e1e1;
+}
+
+.members .members-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.8rem 0.6rem;
+}
+
+.members .members-container h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid #cccccc;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+  color: #494444;
+  font-weight: 400;
+}
+
+.join {
+  float: left;
+  width: 100%;
+  height: 20.8rem;
+  padding: 0 0.85rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2.5rem;
+}
+
+.join .join-content {
+  float: left;
+  width: 100%;
+  height: 19.8rem;
+  padding: 1.65rem 1.15rem;
+  margin-top: 0.8rem;
+  background-color: #ffffff;
+}
+
+.join .join-content h3 {
+  float: left;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  border: 0px;
+}
+
+.join .join-content .join-list {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+}
+
+.join-list li {
+  height: 1.5rem;
+  color: #888888;
+}
+
+.join-list li i {
+  width: 1.2rem;
+  height: 1.1rem;
+  padding-right: 0.5rem;
+  color: #888888;
+}
+
+.login-regeister {
+  float: left;
+  margin-left: 3rem;
+  margin-right: auto;
+  width: 8rem;
+  height: 2.5rem;
+  padding: 0 1.7rem;
+  margin-top: 1.15rem;
+  background-color: #59ba41;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.login-regeister span {
+  display: inline-block;
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer-bg {
+  float: left;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-bg .bg {
+  float: left;
+  width: 100%;
+  height: 16.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-bg .bg img {
+  width: 100%;
+  height: 16.5rem;
 }
 
 /*  尾部  */
@@ -512,8 +559,8 @@ footer .container {
 
 .content {
   width: 100%;
-  height: 77.5rem;
   padding: 4.15rem 0;
+  margin-bottom: 2rem;
 }
 
 .content .footer-logo {
@@ -529,8 +576,10 @@ footer .container {
 }
 
 .link-icon {
+  float: left;
   width: 100%;
   height: 1.9rem;
+  margin-bottom: 1.5rem;
 }
 
 .link-icon i {
@@ -553,6 +602,26 @@ footer .container {
   color: #777777;
   line-height: 3.1rem;
   font-size: 0.65rem;
+}
+
+.address {
+  float: left;
+  width: 100%;
+  height: 7.5rem;
+  padding: 0.6rem 0;
+  background-image: url(../upload/footer-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: 'Source Sans Pro',sans-serif !important;
+  font-size: 0.75rem;
+  color: #cccccc;
+  font-weight: 100 !important;
+}
+
+.address .long {
+  float: left;
+  width: 100%;
+  height: 1rem;
 }
 
 .attentionUs {
@@ -705,7 +774,7 @@ footer .container {
 
 .sent-message {
   float: left;
-  width: 4.4rem;
+  width: 6.5rem;
   height: 1.85rem;
   padding: 0.3rem 0.3rem;
   border: 0;
@@ -713,7 +782,7 @@ footer .container {
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
   line-height: 1.1rem;
   letter-spacing: normal;
@@ -756,10 +825,17 @@ footer .container {
   height: 1.35rem;
   margin-bottom: 0.6rem;
   color: #5e5e5e;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .copyright-menu a {
   font-size: 0.8rem;
   color: #5e5e5e;
 }
-/*# sourceMappingURL=game.css.map */
+
+.nobottommargin {
+  margin-top: 2.5rem;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=english.css.map */

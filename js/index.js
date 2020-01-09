@@ -38,6 +38,11 @@ $(function () {
       autoplay : {
         delay:3000
       },
+
+      keyboard: {
+        enabled: true,
+      },
+      
       grabCursor : true,
       })
 

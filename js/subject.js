@@ -52,6 +52,10 @@ $(function () {
         autoplay : {
             delay:3000
         },
+
+        keyboard: {
+            enabled: true,
+          },
         
         // 如果需要分页器
         pagination: {

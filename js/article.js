@@ -59,6 +59,10 @@ $(function () {
         pagination: {
           el: '.swiper-pagination',
         },
+
+        keyboard: {
+            enabled: true,
+          },
         
         // 如果需要前进后退按钮
         navigation: {
