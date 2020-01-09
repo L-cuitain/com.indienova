@@ -173,6 +173,31 @@ nav {
   z-index: 1;
 }
 
+.nav-right .icon-line-cross {
+  display: none;
+}
+
+.nav-right .form-control {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.6rem 4.15rem 0.6rem 0;
+  width: 15.25rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0 !important;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-left: 0.85rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px;
+}
+
 .nav-list {
   display: none;
   float: left;
